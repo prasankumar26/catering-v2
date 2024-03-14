@@ -2,7 +2,6 @@ import Faq from '@/components/Faq';
 import Footer from '@/components/Footer';
 import Heading from '@/components/Heading';
 import Navbar from '@/components/Navbar';
-import SearchBar from '@/components/SearchBar';
 import Subscribe from '@/components/Subscribe';
 import BrandedCaters from '@/components/cards/BrandedCaters';
 import ExploreCaterersByOccasion from '@/components/cards/ExploreCaterersByOccasion';
@@ -11,6 +10,7 @@ import ExpoloreCuisinesCard from '@/components/cards/ExpoloreCuisinesCard';
 import PopularCaters from '@/components/cards/PopularCaters';
 import RecentSearchCard from '@/components/cards/RecentSearchCard';
 import Container from '@mui/material/Container';
+import CateringSearchBar from '@/components/catering/CateringSearchBar';
 
 const page = () => {
     return (
@@ -21,7 +21,7 @@ const page = () => {
             <div className="search-container">
                 <div className="container-search">
                     <Container maxWidth="md">
-                        <SearchBar searchLink="/catering-search" />
+                        <CateringSearchBar searchLink="/catering-search" />
                     </Container>
                 </div>
             </div>

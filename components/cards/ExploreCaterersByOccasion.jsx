@@ -8,13 +8,15 @@ const ExploreCaterersByOccasion = () => {
     return (
         <>
             <Container maxWidth="lg">
-                <Box sx={{ flexGrow: 1 }}>
+                <Box sx={{ flexGrow: 1 }} style={{marginTop: '20px'}}>
                     <Grid container spacing={2}>
                         {
                             caterersbyoccasions.map((caterersbyoccasion) => (
                                 <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
-                                    <img src={caterersbyoccasion.url} alt="" className="img-fluid caterers-occasion-img image-shadow" />
-                                    <h4 className='text-center caterers-occasion-title'>{caterersbyoccasion.title}</h4>
+                                    <div className="explore-cator-box">
+                                        <img src={caterersbyoccasion.url} alt="" className="img-fluid caterers-occasion-img image-shadow" />
+                                        <h4 className='text-center caterers-occasion-title'>{caterersbyoccasion.title}</h4>
+                                    </div>
                                 </Grid>
                             ))
                         }
@@ -22,7 +24,7 @@ const ExploreCaterersByOccasion = () => {
                 </Box>
             </Container >
 
-            <Divider sx={{ width: '100%', backgroundColor: '#f8f0f0', marginTop: '20px' }} />
+            {/* <Divider sx={{ width: '100%', backgroundColor: '#f8f0f0', marginTop: '20px' }} /> */}
         </>
     )
 }

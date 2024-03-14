@@ -49,7 +49,7 @@ const UserIcon = () => {
 
     return (
         <>
-            <Stack direction="row" alignItems="center" sx={{ paddingLeft: '20px', cursor: 'pointer' }}>
+            <Stack direction="row" alignItems="center" sx={{ paddingLeft: '10px', cursor: 'pointer' }}>
                 <Stack direction="row" alignItems="center"
                     id="fade-button"
                     aria-controls={open ? 'fade-menu' : undefined}
@@ -59,7 +59,7 @@ const UserIcon = () => {
                     <Avatar
                         alt="Remy Sharp"
                         src="https://mui.com/static/images/avatar/1.jpg"
-                        sx={{ width: 34, height: 34 }}
+                        sx={{ width: 28, height: 28 }}
                     />
                     <p className='avatar-text'>Christiana</p>
                 </Stack>

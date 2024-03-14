@@ -1,10 +1,8 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import Navbar from '@/components/Navbar'
-import SearchBar from '@/components/SearchBar';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid';
 import ShareIcon from '@mui/icons-material/Share';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -23,7 +21,7 @@ import SimilarCaterers from '@/components/cards/SimilarCaterers';
 import ReciewCards from '@/components/cards/ReciewCards';
 import Subscribe from '@/components/Subscribe';
 import Footer from '@/components/Footer';
-
+import CateringSearchBar from '@/components/catering/CateringSearchBar';
 
 const index = () => {
   return (
@@ -34,7 +32,7 @@ const index = () => {
       <div className="search-container">
         <div className="container-search">
           <Container maxWidth="md">
-            <SearchBar searchLink="/catering-search" />
+            <CateringSearchBar searchLink="/catering-search" />
           </Container>
         </div>
       </div>
@@ -193,9 +191,7 @@ const index = () => {
       </Container>
 
       <SimilarCaterers />
-
       <ReciewCards />
-
       <Subscribe />
       <Footer />
 

@@ -8,7 +8,7 @@ const PopularCaters = () => {
     return (
         <>
             <Container maxWidth="lg">
-                <Box sx={{ flexGrow: 1 }}>
+                <Box sx={{ flexGrow: 1 }} style={{marginTop: '20px'}}>
                     <Grid container spacing={2}>
                         {popularcaters.map((cater, index) => (
                             <Grid item key={index} xs={12} sm={6} md={4} lg={2.4} xl={2.4}>

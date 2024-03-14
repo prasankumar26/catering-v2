@@ -8,10 +8,10 @@ import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import DatePickerSearch from './search/DatePickerSearch';
+import DatePickerSearch from '../search/DatePickerSearch';
 import Link from 'next/link'
 import Stack from '@mui/material/Stack';
-import DatePickerSearchOrange from './search/DatePickerSearchOrange';
+import DatePickerSearchOrange from '../search/DatePickerSearchOrange';
 
 
 const CssTextField = styled(TextField)(({ theme }) => ({
@@ -28,12 +28,12 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     },
     '& input': {
         border: 'none',
-        fontSize: '10px',
-        padding: '16.2px 20px',
+        fontSize: '15px',
+        padding: '13.2px 20px',
     },
 }));
 
-const SearchBar = () => {
+const CateringSearchBar = () => {
     const [isAdornmentClicked, setIsAdornmentClicked] = useState(false);
 
     return (
@@ -43,18 +43,18 @@ const SearchBar = () => {
                     <div className='w-100'>
                         <CssTextField
                             id="outlined-number"
-                            placeholder="Enter Your Location..."
+                            placeholder="Enter your location..."
                             variant="outlined"
-                            label="Enter Your Location..."
+                            label="Enter your location..."
                             className='mt-0'
                             style={{ width: '100%' }}
                             InputLabelProps={{
-                                style: { color: '#777777' },
+                                style: { color: '#777777', fontSize: '14px' },
                             }}
                             InputProps={{
                                 style: {
                                     borderRadius: '0px',
-                                    backgroundColor: '#f4f4fc6b',
+                                    backgroundColor: '#f4f4fc6b'
                                 },
                                 endAdornment: (
                                     <InputAdornment
@@ -79,7 +79,7 @@ const SearchBar = () => {
                             className='mt-0'
                             style={{ width: '100%' }}
                             InputLabelProps={{
-                                style: { color: '#777777' },
+                                style: { color: '#777777',  fontSize: '14px' },
                             }}
                             InputProps={{
                                 style: {
@@ -90,7 +90,7 @@ const SearchBar = () => {
                         />
                     </div>
                     <div>
-                        <Link href="/">
+                        <Link href="/catering-search">
                             <Button className='red-btn' variant="contained" sx={{
                                 width: '100%', fontWeight: '600', padding: '10px 20px', fontSize: '14px', backgroundColor: '#C33332', textTransform: 'capitalize', '&:hover': {
                                     backgroundColor: '#C33332',
@@ -106,4 +106,4 @@ const SearchBar = () => {
     )
 }
 
-export default SearchBar;
+export default CateringSearchBar;

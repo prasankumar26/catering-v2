@@ -9,7 +9,7 @@ const ExploreCaters = () => {
     return (
         <>
             <Container maxWidth="lg">
-                <Box sx={{ flexGrow: 1 }} className="mb-4">
+                <Box sx={{ flexGrow: 1 }} className="mb-4"  style={{marginTop: '20px'}}>
                     <Grid container spacing={2}>
                         {explorecaters.map((explorecater) => (
                             <Grid item xs={12} sm={6} md={4} lg={4} xl={4} key={explorecater.id}>

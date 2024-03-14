@@ -9,7 +9,7 @@ import faqquestions from '../data/faqquestions.json'
 const Faq = () => {
     return (
         <>
-            <Container maxWidth="md">
+            <Container maxWidth="sm">
                 {
                     faqquestions.map((faq) => (
                         <Accordion className='faq-bg'>
@@ -18,10 +18,10 @@ const Faq = () => {
                                 aria-controls="panel1-content"
                                 id="panel1-header"
                             >
-                               <p style={{fontSize: '16px'}}> {faq.title} </p>
+                               <p style={{fontSize: '14px', fontWeight: '500'}}> {faq.title} </p>
                             </AccordionSummary>
                             <AccordionDetails>
-                            <p style={{fontSize: '14px'}}> {faq.description} </p> 
+                            <p style={{fontSize: '12px'}}> {faq.description} </p> 
                             </AccordionDetails>
                         </Accordion>
                     ))

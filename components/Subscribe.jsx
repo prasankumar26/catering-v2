@@ -26,8 +26,9 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     },
     '& input': {
         fontSize: '16px',
-        padding: '15px 20px',
-        borderRadius: '10px'
+        padding: '10px 20px',
+        borderRadius: '10px',
+        color: '#fff'
     },
     'input': {
         '&::placeholder': {
@@ -53,8 +54,7 @@ const Subscribe = () => {
                 <Box className="text-center">
                     <h4 className='sub-heading'>Subscribe to Get Deals on Bookings</h4>
                     <p className='sub-desc'>Signup & get Discount Updates on Every Bookings</p>
-                    <br />
-                    <Box sx={{ marginBottom: '20px' }}>
+                    <Box sx={{ marginBottom: '10px', marginTop: '20px' }}>
                         <Checkbox
                             checked={checked}
                             onChange={handleChange}
@@ -65,7 +65,7 @@ const Subscribe = () => {
                                 }
                             }}
                         />
-                        <span className='sub-accept mb-4'>I Accept to Receive the offers & Discounts from Caterings&Tiffins.com</span>
+                        <span className='sub-accept'>I Accept to Receive the offers & Discounts from Caterings&Tiffins.com</span>
                     </Box>
 
                     <Container maxWidth="md" >
@@ -75,7 +75,8 @@ const Subscribe = () => {
                                 <CssTextField
                                     id="outlined-number"
                                     variant="outlined"
-                                    label="Enter Email ID"
+                                    // label="Enter Email ID"
+                                    placeholder='Enter Email ID'
                                     className='mt-0'
                                     style={{ width: '75%' }}
                                     InputLabelProps={{
@@ -87,10 +88,10 @@ const Subscribe = () => {
                                         }
                                     }}
                                 />
-                                <Button variant="contained" sx={{
+                                <Button variant="contained" sx={{ height: '40px',
                                     backgroundColor: '#c33332', padding: '10px 30px',
-                                    fontSize: '16px', fontWeight: '600', textTransform: 'capitalize', marginLeft: '10px',
-                                    borderRadius: '10px', '&:hover': {
+                                    fontSize: '14px', fontWeight: '500', textTransform: 'capitalize', marginLeft: '10px',
+                                    borderRadius: '8px', '&:hover': {
                                         backgroundColor: '#c33332',
                                     }
                                 }}>Sign Up</Button>

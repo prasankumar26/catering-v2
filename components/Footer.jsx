@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
@@ -11,7 +10,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
     return (
         <section className="footer-bg">
-            <Container maxWidth="lg">
+            <div className='footer-container'>
                 <Stack direction="row" justifyContent="end" style={{ marginBottom: '30px' }}>
                     <img src="/img/footer/google-play-badge.png" alt="" className="img-fluid" style={{ width: '160px', objectFit: 'contain' }} />
                     <img src="/img/footer/apple.png" alt="" className="img-fluid" style={{ width: '150px', objectFit: 'contain' }} />
@@ -19,7 +18,7 @@ const Footer = () => {
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={12} md={12} lg={4} xl={5}>
-                            <Stack direction="row" justifyContent="center" alignItems="center" sx={{ height: '100%' }}>
+                            <Stack direction="row" justifyContent="start" alignItems="center" sx={{ height: '100%' }}>
                                 <h2 className='footer-logo'><span className="footer-red">CATERINGS</span> <span className="footer-and">&</span> <span className="footer-orange">TIFFINS</span></h2>
                             </Stack>
                         </Grid>
@@ -94,9 +93,9 @@ const Footer = () => {
                     </Grid>
                 </Box>
                 <Stack direction="row" justifyContent="center" sx={{ marginTop: '50px' }}>
-                    <p className='footer-copywright'>Copywrites - Catering & Tiffin Service. All Rights Reserved</p>
+                    <p className='footer-copywright'>Copyright © - CateringsandTiffins.com™ All Rights Reserved</p>
                 </Stack>
-            </Container>
+            </div>
         </section>
     )
 }

@@ -10,12 +10,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import { Autoplay, FreeMode } from 'swiper/modules';
+
+import { Autoplay, FreeMode, Navigation } from 'swiper/modules';
 
 const BrandedCaters = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" className="branded-cater-slider" style={{marginTop: '25px'}}>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Swiper
@@ -26,8 +28,9 @@ const BrandedCaters = () => {
               delay: 2500,
               disableOnInteraction: false,
             }}
+            navigation={true}
             freeMode={true}
-            modules={[Autoplay, FreeMode]}
+            modules={[Autoplay, FreeMode, Navigation]}
             className="mySwiper"
             breakpoints={{
               0: {
@@ -49,7 +52,7 @@ const BrandedCaters = () => {
               brandedcaterers.map((brandedcaterer) => (
                 <>
                   <SwiperSlide>
-                    <CardContent key={brandedcaterer.id} style={{ padding: '10px' }}>
+                    <CardContent key={brandedcaterer.id} style={{ padding: '10px 20px' }}>
                       <Stack direction="row" justifyContent="center" className='recent-search-card w-100'>
                         <img src={brandedcaterer.url} alt="" className="img-fluid explore-cuisine-img" />
                       </Stack>

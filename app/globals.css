@@ -160,21 +160,21 @@ body {
 
 /* notification strat */
 .notification-bg {
-  width: 42px !important;
+  width: 35px !important;
 }
 
 .notification {
   color: #ffffff !important;
   cursor: pointer !important;
-  width: 50px !important;
+  width: 45px !important;
   padding-right: 10px !important;
-  font-size: 20px !important;
+  font-size: 15px !important;
 }
 
 .notification-bg:hover {
   background-color: #ffffff !important;
-  border-radius: 5px !important;
-  height: 30px !important;
+  border-radius: 99px !important;
+  height: 35px !important;
   display: grid !important;
   align-items: center !important;
   color: #000 !important;
@@ -412,6 +412,25 @@ body {
   padding-left: 0px !important;
 }
 
+.branded-cater-slider .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  display: none !important;
+}
+
+.branded-cater-slider .swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 3px);
+  left: auto;
+  color: #322d2d;
+  font-size: 1px;
+  background: #fff;
+  border-radius: 50%;
+  width: 45px;
+  box-shadow: var(--card-box-shadow) !important;
+}
+
+.branded-cater-slider .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  font-size: 19px !important;
+}
+
 /* explore Cuisiness end */
 
 /* explore Caters start */
@@ -420,13 +439,14 @@ body {
   height: 250px;
   object-fit: cover;
   border-radius: var(--radiusOne);
+  box-shadow: var(--card-box-shadow);
 }
 
 .explore-caters-heading {
-  color: var(--alternate);
+  color: #fff;
   font-size: 20px;
   font-family: "Outfit", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* explore Caters end */
@@ -436,17 +456,18 @@ body {
   border-radius: var(--radiusOne);
   height: 155px;
   object-fit: cover;
+  box-shadow: var(--card-box-shadow);
 }
 
 .popular-caterers-heading {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 5px;
   font-weight: 600;
   font-family: "Outfit", sans-serif;
 }
 
 .popular-caterers-des {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   font-family: "Readex Pro", sans-serif;
 }
@@ -467,8 +488,12 @@ body {
   font-weight: 500;
   margin-bottom: 10px;
   font-family: "Outfit", sans-serif;
+  padding-bottom: 10px;
 }
-
+.explore-cator-box{
+  box-shadow: var(--card-box-shadow);
+  border-radius: 8px;
+}
 /* caterers occasion end */
 
 
@@ -490,7 +515,7 @@ body {
 /* subscribe start */
 .subscribe-bg {
   background-image: linear-gradient(to right, #c33332, #d9822b);
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 
 .sub-heading {
@@ -498,6 +523,7 @@ body {
   margin-bottom: 10px;
   color: #ffffff;
   font-weight: 500;
+  font-family: var(--fontPrimary);
 }
 
 .sub-desc {
@@ -573,6 +599,10 @@ body {
   font-size: 14px;
   font-weight: 400;
   font-family: "Readex Pro", sans-serif;
+}
+.footer-container{
+  width: 90%;
+  margin: 0px auto;
 }
 
 /* Footer end */
