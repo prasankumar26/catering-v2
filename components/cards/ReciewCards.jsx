@@ -13,7 +13,7 @@ const ReciewCards = ({tiffin}) => {
     return (
         <Container maxWidth="xl" style={{ marginTop: '30px', marginBottom: '30px' }}>
             <Stack sx={{ marginBottom: '30px' }} alignItems="center" justifyContent="space-between" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-                <h2 className='font-24 review-cards'>Reviews: See What customers loved the most</h2>
+                <h2 className='review-cards'>Reviews: See What customers loved the most</h2>
                 <Link href="/" className="vc-see-all" style={{color : tiffin ? '#D9822B' : '#C33332'}}>Read all Reviews</Link>
             </Stack>
 

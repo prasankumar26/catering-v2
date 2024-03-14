@@ -13,7 +13,7 @@ import Button from '@mui/material/Button';
 const SimilarCaterers = ({ tiffin }) => {
     return (
         <Container maxWidth="xl" style={{ marginTop: '30px', marginBottom: '30px' }}>
-            <Stack sx={{ marginBottom: '30px' }} alignItems="center" justifyContent="space-between" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
+            <Stack sx={{ marginBottom: '20px' }} alignItems="center" justifyContent="space-between" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
                 <h2 className='font-24 similar-caterers'>Similar Caterers / Popular Caterers in your area</h2>
                 <Link href="/" className="vc-see-all" style={{ color: tiffin ? '#D9822B' : '#C33332' }}>See all</Link>
             </Stack>
@@ -54,7 +54,7 @@ const SimilarCaterers = ({ tiffin }) => {
                             <div className="vc-similar-card-description">
                                 <Stack direction="row" justifyContent="space-between" alignItems="start" style={{ marginTop: '10px', marginBottom: '10px' }}>
                                     <div className="text-start">
-                                        <h3 className='font-18 sc-title'>Balaji Catering Service</h3>
+                                        <h3 className='sc-title'>Balaji Catering Service</h3>
                                         <p className='vc-similar-card-small text-left'>Adyar, Chennai</p>
                                     </div>
                                     <span className='vc-similar-card-cost' style={{ color: tiffin ? '#D9822B' : '#C33332' }}>270 / Plate</span>
