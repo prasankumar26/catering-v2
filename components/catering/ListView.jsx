@@ -87,7 +87,7 @@ const ListView = ({ catering }) => {
                                     <span className='lse-starting-price'>Inclusive All Taxes</span>
                                 </Stack>
                                 <Stack direction="row" justifyContent={{ xs: 'start', sm: 'end', lg: "end" }} sx={{ marginBottom: '5px' }}>
-                                    <Link href='/view-catering' className='text-decoration-none' variant="contained" style={{
+                                    <Link href='/view-cater' className='text-decoration-none' variant="contained" style={{
                                         color: '#ffffff', padding: '8px 14px', marginTop: '8px', fontWeight: '500',
                                         backgroundColor: catering ? '#C33332' : '#D9822B', borderRadius: '8px', fontSize: '14px', 
                                         fontFamily: "Readex Pro, sans-serif",

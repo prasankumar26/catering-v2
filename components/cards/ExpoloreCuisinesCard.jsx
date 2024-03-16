@@ -14,7 +14,7 @@ const ExpoloreCuisinesCard = () => {
                     explorecuisines.map((explorecuisine, index) => (
                         <Grid item xs={6} sm={3} md={3} lg={2} xl={2} className={`p-0 w-100 first-card`} key={index}>
                             <CardContent key={explorecuisine.id} className='w-100' style={{ padding: '5px 10px' }}>
-                                <Stack direction="row" justifyContent="center" className='recent-search-card w-100'>
+                                <Stack direction="row" justifyContent="center" className='recent-search-card border-radius-two w-100'>
                                     <img src={explorecuisine.url} alt="" className="img-fluid explore-cuisine-img" />
                                 </Stack>
                             </CardContent>

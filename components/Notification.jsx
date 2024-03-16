@@ -25,125 +25,82 @@ const Notification = () => {
     //     setOpen(false);
     // };
 
-     // dropdown 
-     const [anchorEl, setAnchorEl] = React.useState(null);
-     const open = Boolean(anchorEl);
-     const handleClick = (event) => {
-         setAnchorEl(event.currentTarget);
-     };
-     const handleClose = () => {
-         setAnchorEl(null);
-     };
- 
+    // dropdown 
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
 
     return (
         <>
             <React.Fragment>
                 <div style={{ position: 'relative', marginLeft: '10px' }}>
-
-
-                    <div className="notification-bg" 
-                    id="fade-button"
-                    aria-controls={open ? 'fade-menu' : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={open ? 'true' : undefined}
-                    onClick={handleClick}
+                    <div className="notification-bg"
+                        id="fade-button"
+                        aria-controls={open ? 'fade-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}
                     >
-                        <NotificationsNoneIcon className='notification' /> 
+                        <NotificationsNoneIcon className='notification' />
                     </div>
 
                     <Menu
-                id="fade-menu"
-                MenuListProps={{
-                    'aria-labelledby': 'fade-button',
-                }}
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                TransitionComponent={Fade}
-                PaperProps={{
-                    style: {
-                        zIndex: 9999
-                    }
-                }}
-            >
-                <Stack direction="row" alignItems="center" justifyContent="space-between" 
-                        sx={{marginBottom: '10px', padding: '30px 20px 10px 20px'}}>
+                        id="fade-menu"
+                        MenuListProps={{
+                            'aria-labelledby': 'fade-button',
+                        }}
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        TransitionComponent={Fade}
+                        PaperProps={{
+                            style: {
+                                zIndex: 9999,
+                            }
+                        }}
+                    >
+                        <Stack direction="row" alignItems="center" justifyContent="space-between"
+                            sx={{ marginBottom: '10px', padding: '30px 20px 10px 20px' }}>
                             <Stack direction="row" alignItems="center" spacing={1}>
                                 <NotificationsIcon />
                                 <h2 className='notification-modal-heading'>Notification</h2>
                             </Stack>
                             <p className='notification-mark'>Mark all as read</p>
                         </Stack>
-                        <Divider sx={{ marginBottom: '30px' }}  />
-                        {[1,2,3,4,5].map((item) => (
+                        <Divider sx={{ marginBottom: '30px' }} />
+                        {[1, 2, 3, 4, 5].map((item) => (
                             <div style={{ padding: '10px', width: '400px' }}>
 
-                          <Stack direction="row" justifyContent="space-between">
-                          <Stack direction="row" alignItems="center" spacing={1}>
-                                <Avatar
-                                    alt="Remy Sharp"
-                                    src="https://mui.com/static/images/avatar/1.jpg"
-                                    sx={{ width: 40, height: 40 }}
-                                />
-                                <Stack direction="row" flexDirection="column">
-                                <p className='text-dark'>Andrew Hernandez</p>
-                                <p className='notification-username'>@username</p>
-                                </Stack>
-                            </Stack>
+                                <Stack direction="row" justifyContent="space-between">
+                                    <Stack direction="row" alignItems="center" spacing={1}>
+                                        <Avatar
+                                            alt="Remy Sharp"
+                                            src="https://mui.com/static/images/avatar/1.jpg"
+                                            sx={{ width: 40, height: 40 }}
+                                        />
+                                        <Stack direction="row" flexDirection="column">
+                                            <p className='text-dark notification-name'>Andrew Hernandez</p>
+                                            <p className='notification-username'>@username</p>
+                                        </Stack>
+                                    </Stack>
 
-                            <Stack direction="row" alignItems="center" spacing={1}>
-                              <p className='notification-date'>Jan. 28th, 4:30pm</p> <span className="notification-red-dot"></span>
-                            </Stack>
-                          </Stack>
-                            <p className='notification-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error distinctio eligendi! Dolores iure odio in voluptatibus natus officiis repellendus.</p>
-                        </div>
+                                    <Stack direction="row" alignItems="center" spacing={1}>
+                                        <p className='notification-date'>Jan. 28th, 4:30pm</p> <span className="notification-red-dot"></span>
+                                    </Stack>
+                                </Stack>
+                                <p className='notification-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error distinctio eligendi! Dolores iure odio in voluptatibus natus officiis repellendus.</p>
+                            </div>
                         ))}
 
-            </Menu>
+                    </Menu>
 
-                    {/* <Dialog
-                        open={open}
-                        TransitionComponent={Transition}
-                        keepMounted
-                        onClose={handleClose}
-                        aria-describedby="alert-dialog-slide-description"
-                        style={{ zIndex: '9999', width: '100%' }}
-                        className='notification-box'
-                    >
-                        <Stack direction="row" alignItems="center" justifyContent="space-between" 
-                        sx={{marginBottom: '10px', padding: '30px 20px 10px 20px'}}>
-                            <Stack direction="row" alignItems="center" spacing={1}>
-                                <NotificationsIcon />
-                                <h2>Notification</h2>
-                            </Stack>
-                            <p className='notification-mark'>Mark all as read</p>
-                        </Stack>
-                        <Divider sx={{ marginBottom: '30px' }}  />
-                        {[1,2,3,4,5].map((item) => (
-                            <div style={{ padding: '10px', width: '100%' }}>
 
-                          <Stack direction="row" justifyContent="space-between">
-                          <Stack direction="row" alignItems="center" spacing={1}>
-                                <Avatar
-                                    alt="Remy Sharp"
-                                    src="https://mui.com/static/images/avatar/1.jpg"
-                                    sx={{ width: 40, height: 40 }}
-                                />
-                                <Stack direction="row" flexDirection="column">
-                                <p className='text-dark'>Andrew Hernandez</p>
-                                <p className='notification-username'>@username</p>
-                                </Stack>
-                            </Stack>
-
-                            <Stack direction="row" alignItems="center" spacing={1}>
-                              <p className='notification-date'>Jan. 28th, 4:30pm</p> <span className="notification-red-dot"></span>
-                            </Stack>
-                          </Stack>
-                            <p className='notification-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error distinctio eligendi! Dolores iure odio in voluptatibus natus officiis repellendus.</p>
-                        </div>
-                        ))}
-                    </Dialog> */}
                 </div>
             </React.Fragment>
         </>

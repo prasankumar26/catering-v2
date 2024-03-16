@@ -78,7 +78,7 @@ const RegisterModal = () => {
                     <Stack direction="row" justifyContent='center'>
                         <Button variant="contained" className='login-otp'>Login With OTP</Button>
                     </Stack>
-                    <p className="text-center text-white cursor-pointer" onClick={handleClose}>Maybe Later</p>
+                    <p className="text-center text-white cursor-pointer reg-later" onClick={handleClose}>Maybe Later</p>
                 </div>
             </Dialog>
         </React.Fragment>
