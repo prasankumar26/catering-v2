@@ -123,7 +123,7 @@ const Filters = () => {
                             }}
                         />
 
-                        <Box sx={{ marginTop: '20px' }}>
+                        <Box sx={{ marginTop: '0px' }}>
                             <Accordion className='m-0 shadow-none'>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
