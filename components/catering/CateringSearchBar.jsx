@@ -29,7 +29,7 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     '& input': {
         border: 'none',
         fontSize: '15px',
-        padding: '13.2px 20px',
+        padding: '12.9px 20px',
     },
 }));
 
@@ -39,7 +39,7 @@ const CateringSearchBar = () => {
     return (
         <>
             <form>
-                <Stack className='search-bg'  direction={{ xs: 'column', sm: 'column', md: 'column', lg:"row" }} justifyContent="space-between" spacing={1}>
+                <Stack className='search-bg'  direction={{ xs: 'column', sm: 'column', md: 'column', lg:"row" }} justifyContent="space-between" spacing={0.2}>
                     <div className='w-100'>
                         <CssTextField
                             id="outlined-number"
@@ -92,7 +92,7 @@ const CateringSearchBar = () => {
                     <div>
                         <Link href="/catering-search">
                             <Button className='red-btn' variant="contained" sx={{
-                                width: '100%', fontWeight: '600', padding: '10px 20px', fontSize: '14px', backgroundColor: '#C33332', textTransform: 'capitalize', '&:hover': {
+                                width: '100%', fontWeight: '600', padding: '11px 20px', fontSize: '14px', backgroundColor: '#C33332', textTransform: 'capitalize', '&:hover': {
                                     backgroundColor: '#C33332',
                                 },
                             }}>

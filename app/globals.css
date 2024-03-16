@@ -26,6 +26,7 @@
 
   /* radius */
   --radiusOne: 8px;
+  --radiusTwo: 24px;
 }
 
 
@@ -131,6 +132,7 @@ body {
   font-size: 14px;
   padding: 10px 20px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-link:hover {
@@ -139,6 +141,7 @@ body {
   border-radius: 99px;
   font-size: 14px;
   padding: 10px 20px;
+  font-weight: 500;
 }
 
 .active {
@@ -396,7 +399,7 @@ body {
   box-shadow: var(--card-box-shadow);
   width: fit-content;
   padding: 5px;
-  border-radius: var(--radiusOne);
+  border-radius: var(--radiusTwo);
 }
 
 .recent-search-title {
@@ -461,7 +464,7 @@ body {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: var(--radiusOne);
+  border-radius: var(--radiusTwo);
   box-shadow: var(--card-box-shadow);
 }
 
@@ -499,7 +502,9 @@ body {
 
 /* caterers occasion start */
 .caterers-occasion-img {
-  border-radius: 8px;
+  /* border-radius: var(--radiusTwo); */
+  border-top-right-radius: var(--radiusTwo);
+  border-top-left-radius: var(--radiusTwo);
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -516,7 +521,7 @@ body {
 
 .explore-cator-box {
   box-shadow: var(--card-box-shadow);
-  border-radius: 8px;
+  border-radius: var(--radiusTwo)
 }
 
 /* caterers occasion end */
@@ -526,7 +531,7 @@ body {
 .faq-bg {
   background-color: none;
   border: 2px solid #C33332;
-  border-radius: 8px;
+  border-radius: 8px !important;
   box-shadow: none;
   margin-bottom: 10px;
 }

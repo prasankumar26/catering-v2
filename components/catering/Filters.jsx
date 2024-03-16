@@ -24,10 +24,10 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const CssTextField = styled(TextField)(({ theme }) => ({
     '& .MuiOutlinedInput-root': {
         '& fieldset': {
-            border: '2px solid #C33332',
+            border: '2px solid #e0e3e7',
         },
         '&:hover fieldset': {
-            border: '2px solid #C33332',
+            border: '2px solid #e0e3e7',
         },
         '&.Mui-focused fieldset': {
             border: '2px solid #C33332',
@@ -36,7 +36,7 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     '& input': {
         border: 'none',
         fontSize: '16px',
-        padding: '15px 20px',
+        padding: '10px 20px',
     },
 }));
 
@@ -100,13 +100,12 @@ const Filters = () => {
                         <h3 className='font-20 font-weight-500 filter-text'>Choose Cuisine</h3>
                         <CssTextField
                             id="outlined-number"
-                            placeholder="Select"
                             variant="outlined"
                             label="Search here..."
                             className='mt-0'
                             style={{ width: '100%', marginTop: '10px' }}
                             InputLabelProps={{
-                                style: { color: '#777777' },
+                                style: { color: '#777777', fontSize: '12px' },
                             }}
                             InputProps={{
                                 style: {
@@ -118,7 +117,7 @@ const Filters = () => {
                                         position="end"
                                         onClick={() => setIsAdornmentClicked(true)}
                                     >
-                                        <SearchIcon />
+                                        <SearchIcon style={{fontSize: '14px'}} />
                                     </InputAdornment>
                                 ),
                             }}
