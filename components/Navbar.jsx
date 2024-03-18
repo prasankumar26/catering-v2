@@ -15,7 +15,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Notification from './Notification';
 import Container from '@mui/material/Container';
 
-const Navbar = ({ cateringHome }) => {
+const Navbar = ( ) => {
     const checkActivePath = useActivePath()
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [login, setLogin] = useState(false)

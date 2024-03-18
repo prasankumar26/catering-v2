@@ -21,10 +21,6 @@ const page = () => {
 
   const [checked, setChecked] = useState(true);
 
-  const handleChange = (event) => {
-      setChecked(event.target.checked);
-  };
-
 
   return (
     <>
@@ -55,12 +51,12 @@ const page = () => {
             <Grid item xs={12} md={12} lg={9} xl={9.2}>
               <Stack direction='row' justifyContent="space-between" style={{ margin: '0px 0px 0px 0px' }}>
                 <h2 className='catering-found'>Chennai: 78 Catering service providers found</h2>
-                <SwitchSearchResult checked={checked} handleChange={handleChange} />
+                <SwitchSearchResult checked={checked} setChecked={setChecked} />
               </Stack>
 
-              <SelectBox catering />
+              <SelectBox />
 
-              {checked ? <ListView catering /> : <GridViewList />}
+              {checked ? <ListView /> : <GridViewList />}
             </Grid>
           </Grid>
         </Box>

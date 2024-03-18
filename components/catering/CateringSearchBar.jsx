@@ -95,7 +95,7 @@ const CateringSearchBar = () => {
                     <div className="three w-100">
                         <CssTextField
                             id="outlined-number"
-                            placeholder="How many people are attending?"
+                            placeholder="How many people attending?"
                             variant="outlined"
                             // label="How many people attending?"
                             className='mt-0'

@@ -31,7 +31,7 @@ const ListView = ({ catering }) => {
                             <div className="list-card-center">
                                 <h2 className='list-card-title'>Saravana Catering Service</h2>
                                 <p className='list-card-desc'>Perungudi Main Road, Chennai</p>
-                                <Stack direction="row" spacing={2} sx={{ marginTop: '10px', marginBottom: '10px' }}>
+                                <Stack direction="row" spacing={1} sx={{ marginTop: '15px', marginBottom: '15px' }}>
                                     <Stack direction="row" alignItems="center" spacing={0}>
                                         <img src="/img/icons/list-card-veg.png" className='list-card-veg' alt="" /> <p className='list-card-veg-font'> Veg</p>
                                     </Stack>
@@ -42,7 +42,7 @@ const ListView = ({ catering }) => {
                                 <Stack direction={{ xs: 'row', sm: 'row', md: 'row', lg: "row" }} flexWrap="wrap" spacing={1} className='list-card-dish-loc'>
                                     <span>South Indian | </span>  <span>North Indian | </span>  <span>hyderabadi | </span>  <span>Mughlai | </span>  <span>Kerala </span>
                                 </Stack>
-                                <Stack direction={{ xs: 'row', sm: 'row', md: 'row', lg: "row" }} flexWrap="wrap" spacing={1} sx={{ marginTop: '20px' }}>
+                                <Stack direction={{ xs: 'row', sm: 'row', md: 'row', lg: "row" }} flexWrap="wrap" spacing={1} sx={{ marginTop: '15px' }}>
                                     <span className='list-card-chip'>Delivery & Takeaway</span>
                                     <span className='list-card-chip'>Min. Order - 150 plates</span>
                                     <span className='list-card-chip'>No.of Staffs: 15</span>

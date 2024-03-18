@@ -5,6 +5,9 @@ import ListIcon from '@mui/icons-material/List';
 import { styled } from '@mui/material/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import GridViewIcon from '@mui/icons-material/GridView';
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import Stack from '@mui/material/Stack';
 
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -105,17 +108,19 @@ const IOSSwitch = styled((props) => (
     },
 }));
 
-const SwitchSearchResult = ({ checked, handleChange }) => {
+const SwitchSearchResult = ({checked, setChecked }) => {
 
     return (
         <>
-            {/* <FormControlLabel checked={checked} onChange={handleChange}
-                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-            />
-             */}
-            <FormControlLabel onChange={handleChange}
+
+            <Stack direction="row" spacing={1} className='grid-list-shadow'>
+                <GridViewIcon  style={{ cursor: 'pointer', color: checked ? '#c33332' : '' }} onClick={()=> setChecked(true)} />
+                <FormatListBulletedIcon style={{ cursor: 'pointer', color: !checked ? '#c33332' : '' }} onClick={()=> setChecked(false)} />
+            </Stack>
+
+            {/* <FormControlLabel onChange={handleChange}
                 control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
-            />
+            /> */}
         </>
     )
 }

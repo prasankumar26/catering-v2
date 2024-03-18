@@ -39,7 +39,7 @@ const Breadcrumb = ({ title, catering }) => {
                     >
                         Chennai
                     </Link>
-                    <Typography sx={{ color: '#C33332', fontSize: '12px', fontFamily: "Readex Pro, sans-serif" }}>{title}</Typography>
+                    <Typography sx={{ color: '#C33332', fontSize: '12px', marginTop: '4px', fontFamily: "Readex Pro, sans-serif" }}>{title}</Typography>
                 </Breadcrumbs>
             </div>
         </Container>

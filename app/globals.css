@@ -127,6 +127,13 @@ body h1,h2,h3,h4,h5,h6{
   color: #D9822B;
 }
 
+.grid-list-shadow{
+  /* box-shadow: rgba(229, 229, 230, 0.25) 0px 30px 60px -12px inset, rgba(172, 169, 169, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: inset rgba(216, 220, 226, 0.5) 0px 0px 40px 0px, inset rgba(233, 235, 237, 0.5) 0px 0px 40px 0px, inset rgb(218, 214, 214) 0px 0px 36px -24px;
+  padding: 8px 20px;
+  border-radius: 99px;
+}
+
 /* globals end */
 
 /* navbar start */
@@ -457,7 +464,7 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .cat-types {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .first-card {
@@ -1144,6 +1151,7 @@ body h1,h2,h3,h4,h5,h6{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 10px;
   margin: 5px 0px 10px 0px;
+  border-radius: 8px;
 }
 
 .vc-similar-card-img {
@@ -1377,7 +1385,7 @@ body h1,h2,h3,h4,h5,h6{
 
 .list-card-desc {
   font-family: var(--fontPrimary);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: var(--secondarytext);
 }
@@ -1420,6 +1428,7 @@ body h1,h2,h3,h4,h5,h6{
 
 .lse-icons {
   color: var(--secondarytext);
+  font-size: 18px !important;
 }
 
 .lse-map-icon {
