@@ -90,11 +90,11 @@ const UserIcon = () => {
                         </Stack>
                     </Stack>
 
-                    <p style={{ marginTop: '10px' }}>Manage your account</p>
+                    <p style={{ marginTop: '5px', fontSize: '12px' }}>Manage your account</p>
                     <Link href="/user-profile">
                         <Stack direction="row" justifyContent="space-between" className='up-card'>
                             <Stack direction="row" spacing={1} alignItems="center">
-                                <PersonIcon />
+                                <PersonIcon className="up-profile-icon" />
                                 <p>Edit Profile</p>
                             </Stack>
                             <ChevronRightIcon />
@@ -104,7 +104,7 @@ const UserIcon = () => {
                     <Link href="/user-profile/my-wishlist">
                         <Stack direction="row" justifyContent="space-between" className='up-card'>
                             <Stack direction="row" spacing={1} alignItems="center">
-                                <FavoriteBorderIcon />
+                                <FavoriteBorderIcon className="up-profile-icon" />
                                 <p>My Wishlist</p>
                             </Stack>
                             <ChevronRightIcon />
@@ -114,37 +114,38 @@ const UserIcon = () => {
                         <Link href="/user-profile/my-wishlist">
                     <Stack direction="row" justifyContent="space-between" className='up-card'>
                             <Stack direction="row" spacing={1} alignItems="center">
-                                <DownloadDoneIcon />
+                                <DownloadDoneIcon className="up-profile-icon" />
                                 <p>View Bookings</p>
                             </Stack>
                             <ChevronRightIcon />
                     </Stack>
                         </Link>
 
-                    <p style={{ marginTop: '10px' }}>Settings</p>
+                    <p style={{ marginTop: '10px', fontSize: '12px' }}>Settings</p>
                     <Link href="/user-profile/user-settings">
                     <Stack direction="row" justifyContent="space-between" className='up-card'>
                         <Stack direction="row" spacing={1} alignItems="center">
-                            <SettingsIcon />
+                            <SettingsIcon className="up-profile-icon" />
                             <p>Settings</p>
                         </Stack>
                         <ChevronRightIcon />
                     </Stack>
                     </Link>
 
-                    <p style={{ marginTop: '10px' }}>Get in Touch</p>
+                    <p style={{ marginTop: '10px', fontSize: '12px' }}>Get in Touch</p>
                     <Stack direction="row" justifyContent="space-between" className='up-card'>
                         <p>Help & Support</p>
-                        <ChevronRightIcon />
+                        <ChevronRightIcon className="up-profile-icon" />
                     </Stack>
 
                     <Stack direction="row" justifyContent="space-between" className='up-card'>
                         <p>Share Caterings & Tiffins</p>
-                        <ShareIcon />
+                        <ShareIcon className="up-profile-icon" />
                     </Stack>
 
                     <Stack direction="row" justifyContent="end" sx={{ marginTop: '10px' }}>
-                        <Button variant="contained" className='logout-icon'> <LogoutIcon style={{ marginRight: '10px' }} /> <span className='logout-icon-span'>Logout</span> </Button>
+                        <Button variant="contained" className='logout-icon'> <LogoutIcon style={{ marginRight: '10px', fontSize: '18px' }} /> 
+                        <span className='logout-icon-span'>Logout</span> </Button>
                     </Stack>
 
 

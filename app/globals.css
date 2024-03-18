@@ -306,31 +306,37 @@ body h1,h2,h3,h4,h5,h6{
 
 .up-name {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .up-domain {
   color: #245396;
+  font-size: 12px !important;
 }
 
 .up-img {
-  width: 70px;
-  height: 70px;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 8px;
 }
 
 .up-card {
   border: 1px solid #c4c1c1;
-  padding: 15px;
-  margin-top: 10px;
+  padding: 4px 10px !important;
+  margin-top: 5px;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 12px;
+}
+
+.up-profile-icon{
+  font-size: 16px !important;
 }
 
 .logout-icon {
   background-color: #245396;
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 6px 20px !important;
 }
 
 .logout-icon-span {
