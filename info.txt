@@ -17,3 +17,58 @@ font-family: "Outfit", sans-serif;
 
 popup slider 
 https://www.youtube.com/watch?v=Vc6SFpPf-V4&ab_channel=CandDev
+
+Carering:-
+
+https://catering26.vercel.app/
+https://catering26.vercel.app/catering
+https://catering26.vercel.app/catering-search
+https://catering26.vercel.app/view-catering
+https://catering26.vercel.app/user-profile
+
+
+
+Tiffin:-
+
+https://catering26.vercel.app/
+https://catering26.vercel.app/tiffin
+https://catering26.vercel.app/tiffin-search
+https://catering26.vercel.app/view-tiffin
+https://catering26.vercel.app/user-profile
+
+
+https://rpy.club/cohort/eqaGR0ZwIs?module-id=65e01b23800467bb5d1690bc&lesson-id=65e15616c1a301ba0dbcb2be
+
+
+
+
+enter your location 
+left border radius
+
+calender text small
+and icon
+
+how many people are attending
+user icon 
+
+explore cuisine branded caterrs
+border-radius 24px
+
+
+
+
+search
+select price range 14px
+
+show on map - large size.
+
+north indian 
+divider line
+space fix
+
+buffet spelling
+
+delivery takeaway -> left right padding
+
+table service icon small 32px
+secondary catering - font outfit

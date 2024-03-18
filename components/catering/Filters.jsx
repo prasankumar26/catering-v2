@@ -44,7 +44,6 @@ const Filters = () => {
     const prices = [1, 2, 3, 4, 5];
 
     const [checkedItems, setCheckedItems] = useState(new Array(prices.length).fill(false));
-    console.log(checkedItems, "checkedItems");
 
     const handleChange = (index) => {
       const newCheckedItems = [...checkedItems];

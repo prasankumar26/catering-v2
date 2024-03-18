@@ -6,12 +6,13 @@ import MyLocationIcon from '@mui/icons-material/MyLocation';
 import InputAdornment from '@mui/material/InputAdornment';
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
+// import Grid from '@mui/material/Grid';
+// import Box from '@mui/material/Box';
 import DatePickerSearch from '../search/DatePickerSearch';
 import Link from 'next/link'
 import Stack from '@mui/material/Stack';
-import DatePickerSearchOrange from '../search/DatePickerSearchOrange';
+// import DatePickerSearchOrange from '../search/DatePickerSearchOrange';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
 
 
 const CssTextField = styled(TextField)(({ theme }) => ({
@@ -33,6 +34,27 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     },
 }));
 
+const CssTextFieldRadius = styled(TextField)(({ theme }) => ({
+    '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            border: '2px solid #C33332',
+            borderTopLeftRadius: '8px',  
+            borderBottomLeftRadius: '8px', 
+        },
+        '&:hover fieldset': {
+            border: '2px solid #C33332',
+        },
+        '&.Mui-focused fieldset': {
+            border: '2px solid #C33332',
+        },
+    },
+    '& input': {
+        border: 'none',
+        fontSize: '15px',
+        padding: '12.9px 20px'
+    },
+}));
+
 const CateringSearchBar = () => {
     const [isAdornmentClicked, setIsAdornmentClicked] = useState(false);
 
@@ -41,7 +63,7 @@ const CateringSearchBar = () => {
             <form>
                 <Stack className='search-bg'  direction={{ xs: 'column', sm: 'column', md: 'column', lg:"row" }} justifyContent="space-between" spacing={0.2}>
                     <div className='w-100'>
-                        <CssTextField
+                        <CssTextFieldRadius
                             id="outlined-number"
                             placeholder="Enter your location..."
                             variant="outlined"
@@ -75,7 +97,7 @@ const CateringSearchBar = () => {
                             id="outlined-number"
                             placeholder="How many people are attending?"
                             variant="outlined"
-                            label="How many people are attending?"
+                            label="How many people attending?"
                             className='mt-0'
                             style={{ width: '100%' }}
                             InputLabelProps={{
@@ -85,7 +107,10 @@ const CateringSearchBar = () => {
                                 style: {
                                     borderRadius: '0px',
                                     backgroundColor: '#f4f4fc6b',
-                                }
+                                },
+                                endAdornment: (
+                                    <GroupAddIcon style={{ color: '#777777' }} />
+                                ),
                             }}
                         />
                     </div>

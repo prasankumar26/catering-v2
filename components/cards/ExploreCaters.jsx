@@ -13,7 +13,7 @@ const ExploreCaters = () => {
                     <Grid container spacing={2}>
                         {explorecaters.map((explorecater) => (
                             <Grid item xs={12} sm={6} md={4} lg={4} xl={4} key={explorecater.id}>
-                                <Box sx={{ position: 'relative' }} className="image-shadow">
+                                <Box sx={{ position: 'relative' }} className="image-shadow explore-caters-box">
                                     <img src={explorecater.url} alt="" className="img-fluid w-100 explore-caters-img" />
                                     <Box sx={{ position: 'absolute', top: '4%', right: '4%' }}>
                                         <h4 className='explore-caters-heading'>{explorecater.name}</h4>

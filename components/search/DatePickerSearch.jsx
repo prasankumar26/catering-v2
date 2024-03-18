@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday'; // MUI calendar icon
 
 const DatePickerSearch = () => {
     const [showPicker, setShowPicker] = useState(false);
@@ -24,7 +25,9 @@ const DatePickerSearch = () => {
 
     const formatSelectedRange = (range) => {
         const { startDate, endDate } = range;
-        return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+        const formattedStart = formatDate(startDate).toLowerCase(); // Capitalize start date
+        const formattedEnd = formatDate(endDate).toLowerCase(); // Capitalize end date
+        return `${formattedStart} - ${formattedEnd}`;
     };
 
     const handleSelect = (ranges) => {
@@ -35,7 +38,7 @@ const DatePickerSearch = () => {
         if (selectedRange.startDate !== selectedRange.endDate) {
             setShowPicker(false);
         }
-      }, [selectedRange]);
+    }, [selectedRange]);
 
     const togglePicker = () => {
         setShowPicker(!showPicker);
@@ -59,9 +62,22 @@ const DatePickerSearch = () => {
 
     return (
         <div style={{ maxWidth: '100%', position: 'relative' }} ref={pickerRef}>
-            <Button variant="outlined" className='search-btn' style={{
-                borderRadius: '0px', fontSize:'12px', fontWeight: 'bold', color: '#C33332', width: '100%', padding: '11px 10px', border: '2px solid #C33332',
-            }} onClick={togglePicker}>
+            <Button
+                variant="outlined"
+                className='search-btn'
+                style={{
+                    borderRadius: '0px',
+                    fontSize: '12px',
+                    fontWeight: 'bold',
+                    color: '#C33332',
+                    width: '100%',
+                    padding: '11px 10px',
+                    border: '2px solid #C33332',
+                    textTransform: 'capitalize', 
+                }}
+                endIcon={<CalendarTodayIcon />}
+                onClick={togglePicker}
+            >
                 {formatSelectedRange(selectedRange)}
             </Button>
             {showPicker && (

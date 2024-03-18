@@ -368,6 +368,7 @@ body {
   box-shadow: 0px 2px 16px 0px rgba(26, 26, 26, .24);
 }
 
+
 /* search end */
 
 /* headings start */
@@ -403,7 +404,7 @@ body {
   box-shadow: var(--card-box-shadow);
   width: fit-content;
   padding: 5px;
-  border-radius: var(--radiusOne);
+  border-radius: var(--radiusTwo);
 }
 
 .border-radius-two {
@@ -432,7 +433,7 @@ body {
   width: 150px;
   height: 125px;
   object-fit: cover;
-  border-radius: var(--radiusOne);
+  border-radius: var(--radiusTwo);
 }
 
 .cat-types {
@@ -482,7 +483,9 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
 }
-
+.explore-caters-box{
+  border-radius: var(--radiusTwo) !important;
+}
 /* explore Caters end */
 
 /* Popular Caterers start */
@@ -669,7 +672,7 @@ body {
 }
 
 .service-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Outfit", sans-serif;
 }
