@@ -18,7 +18,7 @@ const ReciewCards = ({tiffin}) => {
             </Stack>
 
             <Swiper
-                navigation={false}
+                navigation={true}
                 slidesPerView={4}
                 spaceBetween={30}
                 pagination={{
@@ -30,7 +30,7 @@ const ReciewCards = ({tiffin}) => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Autoplay]}
-                className="mySwiper"
+                className="mySwiper branded-cater-slider"
                 breakpoints={{
                     0: {
                         slidesPerView: 1,

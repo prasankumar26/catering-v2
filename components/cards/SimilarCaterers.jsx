@@ -31,7 +31,7 @@ const SimilarCaterers = ({ tiffin }) => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Autoplay]}
-                className="mySwiper swiper-custom"
+                className="mySwiper branded-cater-slider"
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
