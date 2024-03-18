@@ -53,6 +53,16 @@ body {
   overflow-x: hidden;
 }
 
+/* mui globals strat */
+/* search page  */
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root::before{
+  opacity: 0 !important;
+}
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded::before {
+  opacity: 0 !important;
+}
+/* mui globals end */
+
 /* globals  */
 .text-decoration-none {
   text-decoration: none;
@@ -80,7 +90,7 @@ body {
 }
 
 .p-0 {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .m-0 {
@@ -132,7 +142,8 @@ body {
   font-size: 14px;
   padding: 10px 20px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: var(--fontPrimary);
 }
 
 .nav-link:hover {
@@ -1231,10 +1242,10 @@ body {
   font-size: 30px !important;
   font-weight: 600 !important;
 }
-
+/* 
 .css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded::before {
   opacity: 1 !important;
-}
+} */
 
 /* view caterer end  */
 
@@ -1279,7 +1290,7 @@ body {
 
 .select-price-range {
   font-family: var(--fontSecondary);
-  font-size: 12px;
+  font-size: 14px !important;
   font-weight: 400;
   color: var(--secondarytext);
 }
@@ -1299,9 +1310,9 @@ body {
   min-height: 40px !important;
 }
 
-.css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded::before {
+/* .css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded::before {
   opacity: 1 !important;
-}
+} */
 
 /* .checkbox-color{
   color: #C33332 !important;
@@ -1335,7 +1346,7 @@ body {
 }
 
 .list-view-icons {
-  width: 45px;
+  width: 32px;
 }
 
 .list-view-icon-text {
@@ -1347,7 +1358,7 @@ body {
 }
 
 .list-card-title {
-  font-family: var(--fontPrimary);
+  font-family: var(--fontSecondary);
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 4px;
@@ -1387,10 +1398,10 @@ body {
 }
 
 .list-card-chip {
-  font-size: 12px;
+  font-size: 10px;
   background-color: #c3323227;
   color: var(--secondary);
-  padding: 5px 5px;
+  padding: 5px 8px;
   border-radius: 99px;
   width: fit-content;
   font-weight: 500;
@@ -1595,7 +1606,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 /* react date picker calender */
 
 .catering-found {

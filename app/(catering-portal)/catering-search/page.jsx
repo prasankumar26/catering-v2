@@ -47,7 +47,7 @@ const page = () => {
               <div className="position-relative">
                 <img src="/img/Search-Result-View-Page-Images/01-map.png" alt="" className="img-fluid" style={{ borderRadius: '5px', marginBottom: '4px' }} />
                 <div className="position-absolute map-box">
-                  <Button variant="contained" className='show-on-map' sx={{ backgroundColor: '#C33332', fontSize: '12px', '&:hover': { backgroundColor: '#C33332' } }}>Show on map</Button>
+                  <Button variant="contained" className='show-on-map' sx={{ backgroundColor: '#C33332', fontSize: '10px', '&:hover': { backgroundColor: '#C33332' } }}>Show on map</Button>
                 </div>
               </div>
               <Filters />

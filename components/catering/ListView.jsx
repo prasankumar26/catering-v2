@@ -42,7 +42,7 @@ const ListView = ({ catering }) => {
                                 <Stack direction={{ xs: 'row', sm: 'row', md: 'row', lg: "row" }} flexWrap="wrap" spacing={1} className='list-card-dish-loc'>
                                     <span>South Indian | </span>  <span>North Indian | </span>  <span>hyderabadi | </span>  <span>Mughlai | </span>  <span>Kerala </span>
                                 </Stack>
-                                <Stack direction={{ xs: 'row', sm: 'row', md: 'row', lg: "row" }} flexWrap="wrap" spacing={1} sx={{ marginTop: '10px' }}>
+                                <Stack direction={{ xs: 'row', sm: 'row', md: 'row', lg: "row" }} flexWrap="wrap" spacing={1} sx={{ marginTop: '20px' }}>
                                     <span className='list-card-chip'>Delivery & Takeaway</span>
                                     <span className='list-card-chip'>Min. Order - 150 plates</span>
                                     <span className='list-card-chip'>No.of Staffs: 15</span>
