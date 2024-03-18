@@ -130,12 +130,12 @@ const Filters = () => {
                                     id="panel1-header"
                                     className='m-0 p-0'
                                 >
-                                    <Stack className='text-muted m-0' direction="row" alignItems="center">
+                                    <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
                                         <Checkbox {...label} size="small" className='m-0 checkbox-color' />
                                         <span className='checkbox-text'>North Indian</span>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails sx={{marginLeft: '-10px',  padding: '0px 16px' }}>
+                                <AccordionDetails sx={{marginLeft: '-20px',  padding: '0px 16px' }}>
                                     <Stack className='text-muted' direction="row" alignItems="center">
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Awadhi</span>
@@ -168,12 +168,12 @@ const Filters = () => {
                                     id="panel1-header"
                                     className='p-0'
                                 >
-                                    <Stack className='text-muted' direction="row" alignItems="center">
+                                    <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>South Indian</span>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails sx={{marginLeft: '-10px', padding: '0px 16px' }}>
+                                <AccordionDetails sx={{marginLeft: '-20px', padding: '0px 16px' }}>
                                     <Stack className='text-muted' direction="row" alignItems="center">
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Awadhi</span>
@@ -206,12 +206,12 @@ const Filters = () => {
                                     id="panel1-header"
                                     className='p-0'
                                 >
-                                    <Stack className='text-muted' direction="row" alignItems="center">
+                                    <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>East Indian</span>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails sx={{marginLeft: '-10px',  padding: '0px 16px' }}>
+                                <AccordionDetails sx={{marginLeft: '-20px',  padding: '0px 16px' }}>
                                     <Stack className='text-muted' direction="row" alignItems="center">
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Awadhi</span>
@@ -244,12 +244,12 @@ const Filters = () => {
                                     id="panel1-header"
                                     className='p-0'
                                 >
-                                    <Stack className='text-muted' direction="row" alignItems="center">
+                                    <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>West Indian</span>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails sx={{marginLeft: '-10px',  padding: '0px 16px' }}>
+                                <AccordionDetails sx={{marginLeft: '-20px',  padding: '0px 16px' }}>
                                     <Stack className='text-muted' direction="row" alignItems="center">
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Awadhi</span>
@@ -282,12 +282,12 @@ const Filters = () => {
                                     id="panel1-header"
                                     className='p-0'
                                 >
-                                    <Stack className='text-muted' direction="row" alignItems="center">
+                                    <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>North East Indian</span>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails sx={{marginLeft: '-10px',  padding: '0px 16px' }}>
+                                <AccordionDetails sx={{marginLeft: '-20px',  padding: '0px 16px' }}>
                                     <Stack className='text-muted' direction="row" alignItems="center">
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Awadhi</span>
@@ -320,12 +320,12 @@ const Filters = () => {
                                     id="panel1-header"
                                     className='p-0'
                                 >
-                                    <Stack className='text-muted' direction="row" alignItems="center">
+                                    <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Other Cuisiens</span>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails sx={{marginLeft: '-10px',  padding: '0px 16px' }}>
+                                <AccordionDetails sx={{marginLeft: '-20px',  padding: '0px 16px' }}>
                                     <Stack className='text-muted' direction="row" alignItems="center">
                                         <Checkbox {...label} size="small" className='checkbox-color' />
                                         <span className='checkbox-text'>Awadhi</span>
