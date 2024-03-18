@@ -64,6 +64,15 @@ body {
 /* mui globals end */
 
 /* globals  */
+
+body p, a, li, b, strong{
+  font-family: var(--fontPrimary);
+}
+
+body h1,h2,h3,h4,h5,h6{
+  font-family: var(--fontPrimary);
+}
+
 .text-decoration-none {
   text-decoration: none;
 }
@@ -957,6 +966,7 @@ body {
   margin-top: 10px;
   margin-bottom: 0px;
   text-decoration: underline;
+  font-family: var(--fontPrimary);
 }
 
 .vc-reviews-tiffin {
@@ -1758,8 +1768,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 14px;
+  font-size: 10px;
   cursor: pointer;
+  font-family: var(--fontPrimary);
 }
 
 .view-all-dark-overlay {
@@ -1767,6 +1778,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #00000070;
+  border-radius: var(--radiusOne);
 }
 
 .settings-links li {
