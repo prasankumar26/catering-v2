@@ -75,7 +75,7 @@ const DatePickerSearch = () => {
                     border: '2px solid #C33332',
                     textTransform: 'capitalize', 
                 }}
-                endIcon={<CalendarTodayIcon />}
+                startIcon={<CalendarTodayIcon />}
                 onClick={togglePicker}
             >
                 {formatSelectedRange(selectedRange)}

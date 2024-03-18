@@ -30,7 +30,7 @@ const CssTextField = styled(TextField)(({ theme }) => ({
     '& input': {
         border: 'none',
         fontSize: '15px',
-        padding: '12.9px 20px',
+        padding: '12.9px 0px',
     },
 }));
 
@@ -38,8 +38,8 @@ const CssTextFieldRadius = styled(TextField)(({ theme }) => ({
     '& .MuiOutlinedInput-root': {
         '& fieldset': {
             border: '2px solid #C33332',
-            borderTopLeftRadius: '8px',  
-            borderBottomLeftRadius: '8px', 
+            borderTopLeftRadius: '8px',
+            borderBottomLeftRadius: '8px',
         },
         '&:hover fieldset': {
             border: '2px solid #C33332',
@@ -51,7 +51,7 @@ const CssTextFieldRadius = styled(TextField)(({ theme }) => ({
     '& input': {
         border: 'none',
         fontSize: '15px',
-        padding: '12.9px 20px'
+        padding: '12.9px 0px'
     },
 }));
 
@@ -61,13 +61,13 @@ const CateringSearchBar = () => {
     return (
         <>
             <form>
-                <Stack className='search-bg'  direction={{ xs: 'column', sm: 'column', md: 'column', lg:"row" }} justifyContent="space-between" spacing={0.2}>
+                <Stack className='search-bg' direction={{ xs: 'column', sm: 'column', md: 'column', lg: "row" }} justifyContent="space-between" spacing={0.2}>
                     <div className='w-100'>
                         <CssTextFieldRadius
                             id="outlined-number"
                             placeholder="Enter your location..."
                             variant="outlined"
-                            label="Enter your location..."
+                            // label="Enter your location..."
                             className='mt-0'
                             style={{ width: '100%' }}
                             InputLabelProps={{
@@ -78,9 +78,9 @@ const CateringSearchBar = () => {
                                     borderRadius: '0px',
                                     backgroundColor: '#f4f4fc6b'
                                 },
-                                endAdornment: (
+                                startAdornment: (
                                     <InputAdornment
-                                        position="end"
+                                        position="start"
                                         onClick={() => setIsAdornmentClicked(true)}
                                     >
                                         <MyLocationIcon />
@@ -90,33 +90,37 @@ const CateringSearchBar = () => {
                         />
                     </div>
                     <div className="w-100">
-                      <DatePickerSearch /> 
+                        <DatePickerSearch />
                     </div>
                     <div className="three w-100">
                         <CssTextField
                             id="outlined-number"
                             placeholder="How many people are attending?"
                             variant="outlined"
-                            label="How many people attending?"
+                            // label="How many people attending?"
                             className='mt-0'
                             style={{ width: '100%' }}
                             InputLabelProps={{
-                                style: { color: '#777777',  fontSize: '14px' },
+                                style: { color: '#777777', fontSize: '14px' },
                             }}
                             InputProps={{
                                 style: {
                                     borderRadius: '0px',
                                     backgroundColor: '#f4f4fc6b',
                                 },
-                                endAdornment: (
-                                    <GroupAddIcon style={{ color: '#777777' }} />
+                                startAdornment: (
+                                    <InputAdornment
+                                        position="start"
+                                    >
+                                        <GroupAddIcon />
+                                    </InputAdornment>
                                 ),
                             }}
                         />
                     </div>
                     <div>
                         <Link href="/catering-search">
-                            <Button className='red-btn' variant="contained" sx={{
+                            <Button className='red-btn' variant="contained" sx={{ boxShadow: 'none',
                                 width: '100%', fontWeight: '600', padding: '11px 20px', fontSize: '14px', backgroundColor: '#C33332', textTransform: 'capitalize', '&:hover': {
                                     backgroundColor: '#C33332',
                                 },

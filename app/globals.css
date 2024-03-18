@@ -207,7 +207,7 @@ body h1,h2,h3,h4,h5,h6{
   cursor: pointer !important;
   width: 45px !important;
   padding-right: 10px !important;
-  font-size: 15px !important;
+  font-size: 18px !important;
 }
 
 .notification-bg:hover {
@@ -421,10 +421,10 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .recent-search-card {
-  box-shadow: var(--card-box-shadow);
+  /* box-shadow: var(--card-box-shadow); */
   width: fit-content;
   padding: 5px;
-  border-radius: var(--radiusTwo);
+  border-radius: var(--radiusOne);
 }
 
 .border-radius-two {
