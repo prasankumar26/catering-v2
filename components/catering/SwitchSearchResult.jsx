@@ -114,8 +114,8 @@ const SwitchSearchResult = ({checked, setChecked }) => {
         <>
 
             <Stack direction="row" spacing={1} className='grid-list-shadow'>
-                <GridViewIcon  style={{ cursor: 'pointer', color: checked ? '#c33332' : '' }} onClick={()=> setChecked(true)} />
-                <FormatListBulletedIcon style={{ cursor: 'pointer', color: !checked ? '#c33332' : '' }} onClick={()=> setChecked(false)} />
+                <FormatListBulletedIcon style={{ cursor: 'pointer', color: checked ? '#c33332' : '' }} onClick={()=> setChecked(true)} />
+                <GridViewIcon  style={{ cursor: 'pointer', color: !checked ? '#c33332' : '' }} onClick={()=> setChecked(false)} />
             </Stack>
 
             {/* <FormControlLabel onChange={handleChange}

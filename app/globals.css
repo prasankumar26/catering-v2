@@ -65,7 +65,7 @@ body {
 
 /* globals  */
 
-body p, a, li, b, strong{
+body p, a, li, b, strong, div{
   font-family: var(--fontPrimary);
 }
 
