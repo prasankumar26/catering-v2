@@ -838,6 +838,13 @@ h6 {
   padding: 5px 10px;
   border-radius: 99px;
 }
+.vc-chip-tiffin {
+  font-size: 12px;
+  background-color: var(--accent3);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 99px;
+}
 
 .vc-heading {
   font-size: 24px;
@@ -868,8 +875,16 @@ h6 {
   font-size: 12px;
   color: #c33332 !important;
 }
+.vc-icons-tiffin {
+  font-size: 12px;
+  color: var(--primary) !important;
+}
 
 .vc-icons:hover {
+  color: #245396 !important;
+  cursor: pointer;
+}
+.vc-icons-tiffin:hover {
   color: #245396 !important;
   cursor: pointer;
 }
@@ -932,9 +947,9 @@ h6 {
 }
 
 .food-type-tiffin {
-  color: #D9822B;
+  color: var(--primary);
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Outfit", sans-serif;
 }
 
@@ -979,7 +994,11 @@ h6 {
 
 .vc-cater-tiffin {
   color: #D9822B;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Readex Pro", sans-serif;
 }
 
 .vc-price {
@@ -990,6 +1009,12 @@ h6 {
 
 .vc-price-one {
   color: #C33332;
+  font-weight: 500;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 24px;
+}
+.vc-price-one-tiffin {
+  color: var(--primary);
   font-weight: 500;
   font-family: "Readex Pro", sans-serif;
   font-size: 24px;
@@ -1010,6 +1035,14 @@ h6 {
   transition: 0.5s all;
   font-family: var(--fontPrimary);
 }
+.vc-reviews-tiffin {
+  color: var(--primary);
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  transition: 0.5s all;
+  font-family: var(--fontPrimary);
+}
 .vc-reviews:hover{
   color: var(--tertiary);
   font-size: 12px;
@@ -1024,7 +1057,7 @@ h6 {
   margin-bottom: 5px;
 }
 
-.vc-contact-btn {
+/* .vc-contact-btn {
   background-color: #459412 !important;
   border-radius: 8px !important;
   padding: 6px 20px !important;
@@ -1033,16 +1066,18 @@ h6 {
   font-family: "Readex Pro", sans-serif !important;
   text-transform: capitalize !important;
   width: 215px !important;
-}
+} */
 
-.vt-contact-btn {
-  background-color: #D9822B !important;
+.vc-contact-btn-tiffin {
+  background-color: var(--accent3) !important;
   border-radius: 8px !important;
-  padding: 10px 15px !important;
+  padding: 6px 15px !important;
   font-weight: 500 !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-family: "Readex Pro", sans-serif !important;
   text-transform: capitalize !important;
+  width: 215px !important;
+  box-shadow: var(--image-box-shadow) !important;
 }
 
 .vc-contact-btn {
@@ -1108,6 +1143,12 @@ h6 {
 }
 .vc-about-us {
   color: #C33332;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.vc-about-us-tiffin {
+  color: #D9822B;
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
@@ -1876,8 +1917,10 @@ border-top-left-radius: 8px;
 
 .viewSimilarCaters {
   background-color: #D9822B;
-  padding: 4px 20px;
-  margin-top: 15px;
+  padding: 0px 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  text-transform: capitalize;
 }
 
 .view-all-photos {
