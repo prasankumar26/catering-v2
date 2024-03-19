@@ -59,7 +59,7 @@ const ShowAllImages = () => {
                 ]}
             />
             <Box sx={{ flexGrow: 1 }} className="mb-4 cursor-pointer" onClick={() => setOpen(true)}>
-                <Grid container spacing={2}>
+                <Grid container spacing={0.5}>
                     <Grid item xs={12} sm={12} lg={5}>
                         <img src="/img/Search-Result-View-Page-Images/1.png" alt="" className="img-fluid vc-img-left" />
                     </Grid>
@@ -67,7 +67,7 @@ const ShowAllImages = () => {
                         <img src="/img/Search-Result-View-Page-Images/2.webp" alt="" className="img-fluid vc-img-left" />
                     </Grid>
                     <Grid item xs={12} sm={12} lg={3.5}>
-                        <Grid container spacing={2} >
+                        <Grid container spacing={0.5} >
                             <Grid item xs={12} sm={12} lg={6}>
                                 <img src="/img/Search-Result-View-Page-Images/1.png" alt="" className="img-fluid vc-img-right" />
                             </Grid>

@@ -55,21 +55,33 @@ body {
 
 /* mui globals strat */
 /* search page  */
-.css-1c35hjw-MuiPaper-root-MuiAccordion-root::before{
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root::before {
   opacity: 0 !important;
 }
+
 .css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded::before {
   opacity: 0 !important;
 }
+
 /* mui globals end */
 
 /* globals  */
 
-body p, a, li, b, strong, div{
+body p,
+a,
+li,
+b,
+strong,
+div {
   font-family: var(--fontPrimary);
 }
 
-body h1,h2,h3,h4,h5,h6{
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fontPrimary);
 }
 
@@ -127,13 +139,20 @@ body h1,h2,h3,h4,h5,h6{
   color: #D9822B;
 }
 
-.grid-list-shadow{
+.grid-list-shadow {
   /* box-shadow: rgba(229, 229, 230, 0.25) 0px 30px 60px -12px inset, rgba(172, 169, 169, 0.3) 0px 18px 36px -18px inset; */
   box-shadow: inset rgba(216, 220, 226, 0.5) 0px 0px 40px 0px, inset rgba(233, 235, 237, 0.5) 0px 0px 40px 0px, inset rgb(218, 214, 214) 0px 0px 36px -24px;
   padding: 8px 20px;
   border-radius: 99px;
 }
 
+.text-ellipse-three {
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 /* globals end */
 
 /* navbar start */
@@ -329,7 +348,7 @@ body h1,h2,h3,h4,h5,h6{
   font-size: 12px;
 }
 
-.up-profile-icon{
+.up-profile-icon {
   font-size: 16px !important;
 }
 
@@ -469,11 +488,13 @@ body h1,h2,h3,h4,h5,h6{
   object-fit: cover;
   border-radius: var(--radiusTwo);
 }
-.explore-cuisine-card{
+
+.explore-cuisine-card {
   width: fit-content;
   padding: 5px;
   border-radius: var(--radiusOne);
 }
+
 .cat-types {
   margin-top: 15px;
 }
@@ -521,9 +542,11 @@ body h1,h2,h3,h4,h5,h6{
   font-family: "Outfit", sans-serif;
   font-weight: 600;
 }
-.explore-caters-box{
+
+.explore-caters-box {
   border-radius: var(--radiusTwo) !important;
 }
+
 /* explore Caters end */
 
 /* Popular Caterers start */
@@ -831,9 +854,9 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .vc-address {
-  font-size: 15px;
+  font-size: 14px;
   color: #245396;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 5px;
 }
 
@@ -843,10 +866,11 @@ body h1,h2,h3,h4,h5,h6{
 
 .vc-icons {
   font-size: 12px;
+  color: #c33332 !important;
 }
 
 .vc-icons:hover {
-  color: #C33332 !important;
+  color: #245396 !important;
   cursor: pointer;
 }
 
@@ -854,7 +878,7 @@ body h1,h2,h3,h4,h5,h6{
   color: #245396 !important;
   font-size: 12px !important;
   cursor: pointer !important;
-  padding: 10px;
+  padding: 0px;
   font-weight: 500;
 }
 
@@ -896,7 +920,7 @@ body h1,h2,h3,h4,h5,h6{
 .vc-img-right {
   border-radius: 8px;
   width: 100%;
-  height: 117px;
+  height: 122px;
   object-fit: cover;
 }
 
@@ -966,14 +990,14 @@ body h1,h2,h3,h4,h5,h6{
 
 .vc-price-one {
   color: #C33332;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Readex Pro", sans-serif;
   font-size: 24px;
 }
 
 .vc-price-one-tiffin {
   color: #D9822B;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Readex Pro", sans-serif;
   font-size: 24px;
 }
@@ -983,10 +1007,17 @@ body h1,h2,h3,h4,h5,h6{
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 0px;
-  text-decoration: underline;
+  transition: 0.5s all;
   font-family: var(--fontPrimary);
 }
-
+.vc-reviews:hover{
+  color: var(--tertiary);
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-family: var(--fontPrimary);
+}
 .vc-reviews-tiffin {
   color: #D9822B;
   font-size: 14px;
@@ -996,11 +1027,12 @@ body h1,h2,h3,h4,h5,h6{
 .vc-contact-btn {
   background-color: #459412 !important;
   border-radius: 8px !important;
-  padding: 10px 20px !important;
+  padding: 6px 20px !important;
   font-weight: 500 !important;
   font-size: 16px !important;
   font-family: "Readex Pro", sans-serif !important;
   text-transform: capitalize !important;
+  width: 215px !important;
 }
 
 .vt-contact-btn {
@@ -1016,11 +1048,13 @@ body h1,h2,h3,h4,h5,h6{
 .vc-contact-btn {
   background-color: #C33332 !important;
   border-radius: 8px !important;
-  padding: 10px 15px !important;
+  padding: 6px 15px !important;
   font-weight: 500 !important;
   font-size: 14px !important;
   font-family: "Readex Pro", sans-serif !important;
   text-transform: capitalize !important;
+  width: 215px !important;
+  box-shadow: var(--image-box-shadow) !important;
 }
 
 .vt-whatsapp-btn {
@@ -1035,7 +1069,7 @@ body h1,h2,h3,h4,h5,h6{
 
 .vc-locations {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Outfit", sans-serif;
 }
 
@@ -1066,9 +1100,12 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .vc-shadow {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: var(--card-box-shadow);
 }
-
+.vc-icon-svg{
+  width: 50px;
+  height: 50px;
+}
 .vc-about-us {
   color: #C33332;
   margin-bottom: 10px;
@@ -1084,7 +1121,7 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .vc-para {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   line-height: 1.4em;
   color: #57636C;
@@ -1106,6 +1143,18 @@ body h1,h2,h3,h4,h5,h6{
 
 
 /* grid image gallery  */
+.occasion-top-left-radius{
+border-top-left-radius: 8px;
+}
+.occasion-top-right-radius{
+  border-top-right-radius: 8px;
+}
+.occasion-bottom-left-radius{
+  border-bottom-left-radius: 8px;
+}
+.occasion-bottom-right-radius{
+  border-bottom-right-radius: 8px;
+}
 .vc-gallery {
   font-size: 28px;
   font-weight: 600;
@@ -1199,20 +1248,20 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .vc-review-card-img {
-  width: 50px !important;
+  width: 35px !important;
   border-radius: 99px;
 }
 
 .vc-review-card-title {
-  font-size: 16px;
+  font-size: 12px;
   text-align: left;
   font-weight: 500;
   font-family: "Outfit", sans-serif;
 }
 
 .vc-review-card-months {
-  font-size: 12px;
-  margin-top: 5px;
+  font-size: 10px;
+  margin-top: 1px;
   font-weight: 400;
   font-family: "Readex Pro", sans-serif;
 }
@@ -1271,6 +1320,7 @@ body h1,h2,h3,h4,h5,h6{
   font-size: 30px !important;
   font-weight: 600 !important;
 }
+
 /* 
 .css-1c35hjw-MuiPaper-root-MuiAccordion-root.Mui-expanded::before {
   opacity: 1 !important;
@@ -1521,20 +1571,24 @@ body h1,h2,h3,h4,h5,h6{
   background-image: linear-gradient(to right, #c33332, #d9822b);
   padding: 10px 0px 40px 0px;
   width: 400px !important;
+  border-radius: 8px;
 }
-
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+  border-radius: 10px !important;
+}
 .catering-register-title {
   color: #ffffff;
-  font-size: 1..4em;
+  font-size: 1.4em !important;
+  font-weight: 500 !important;
 }
 
 .register-welcome {
-  color: #eae4e4;
+  color: #ffffff;
   font-size: 1.2em;
 }
 
 .register-para {
-  color: #eae4e4;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -1554,6 +1608,8 @@ body h1,h2,h3,h4,h5,h6{
 .reg-later {
   font-family: var(--fontPrimary);
   font-weight: 400;
+  color: #ffffff;
+  font-size: 12px !important;
 }
 
 .register-bg .css-1pnmrwp-MuiTypography-root {
@@ -1636,6 +1692,7 @@ body h1,h2,h3,h4,h5,h6{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* react date picker calender */
 
 .catering-found {
@@ -1763,10 +1820,12 @@ body h1,h2,h3,h4,h5,h6{
 .notification-width {
   width: 50%;
 }
-.notification-font{
+
+.notification-font {
   font-size: 14px;
   font-family: var(--fontPrimary);
 }
+
 .landing-container {
   width: 80%;
   margin: 0px auto;

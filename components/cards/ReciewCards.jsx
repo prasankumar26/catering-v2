@@ -12,7 +12,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 const ReciewCards = ({tiffin}) => {
     return (
         <Container maxWidth="xl" style={{ marginTop: '30px', marginBottom: '30px' }}>
-            <Stack sx={{ marginBottom: '30px' }} alignItems="center" justifyContent="space-between" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
+            <Stack sx={{ marginBottom: '0px' }} alignItems="center" justifyContent="space-between" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
                 <h2 className='review-cards'>Reviews: See What customers loved the most</h2>
                 <Link href="/" className="vc-see-all" style={{color : tiffin ? '#D9822B' : '#C33332'}}>Read all Reviews</Link>
             </Stack>
@@ -47,7 +47,7 @@ const ReciewCards = ({tiffin}) => {
                 }}
             >
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-                    <SwiperSlide>
+                    <SwiperSlide style={{marginRight: '0px'}}>
                     <div className="vc-review-card" key={item}>
                         <Stack direction="row" spacing={1}>
                             <div className="">
@@ -59,7 +59,7 @@ const ReciewCards = ({tiffin}) => {
                             </div>
                         </Stack>
                         <div className="">
-                            <p className='vc-review-card-para text-start'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed amet, eos architecto laudantium illum adipisci asperiores ipsam libero nobis velit porro rerum. Laborum, magni assumenda.</p>
+                            <p className='vc-review-card-para text-ellipse-three text-start'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed amet, eos architecto laudantium illum adipisci asperiores ipsam libero nobis velit porro rerum. Laborum, magni assumenda.</p>
                             <div className="text-start">
                             <Link href="/" className='vc-review-card-link' style={{color : tiffin ? '#D9822B' : '#C33332'}}>Read more</Link>
                             </div>
@@ -68,9 +68,6 @@ const ReciewCards = ({tiffin}) => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-
-
-
         </Container>
     )
 }

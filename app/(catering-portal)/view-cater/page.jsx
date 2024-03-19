@@ -39,7 +39,7 @@ const index = () => {
       <Breadcrumb title="Saravana Catering Service" />
 
       <Container maxWidth="lg">
-        <Stack sx={{ marginTop: '20px' }} direction={{ xs: 'column', sm: 'column', md: 'column', lg: 'row' }} alignItems="center" justifyContent="space-between">
+        <Stack sx={{ marginTop: '20px' }} direction={{ xs: 'column', sm: 'column', md: 'column', lg: 'row' }} alignItems="end" justifyContent="space-between">
           <div>
             <Stack direction="row" alignItems="center" spacing={2}>
               <h2 className="vc-heading">Saravana Catering Service </h2>
@@ -48,10 +48,10 @@ const index = () => {
             <h3 className="vc-address">No.65, Nehru Road, 8th Cross Street, Near kalyan Nagar Post, Bangalore - 560084</h3>
           </div>
           <div className='vc-icon-box'>
-            <Stack direction='row' justifyContent="space-between">
+            <Stack direction='row' justifyContent="space-between" alignItems="end">
               <Stack direction="row" alignItems="center" spacing={1} className="vc-icons"> <ShareIcon style={{ fontSize: '18px' }} /> <span>Share</span></Stack>
               <Stack direction="row" alignItems="center" spacing={1} className="vc-icons"> <FavoriteBorderIcon style={{ fontSize: '18px' }} /> <span>Save</span></Stack>
-              <Stack direction="row" alignItems="center" spacing={1} className="vc-icons-btn"> <LocationOnIcon style={{ fontSize: '14px' }} /> <span className="font-12">Show On Map</span></Stack>
+              <Stack direction="row" alignItems="center" spacing={1} className="vc-icons"> <LocationOnIcon style={{ fontSize: '14px' }} /> <span className="font-12">Show On Map</span></Stack>
             </Stack>
           </div>
         </Stack>
@@ -81,7 +81,7 @@ const index = () => {
                 </Stack>
                 <p className="vc-reviews">See Reviews (352)</p>
                 <Stack direction="row" spacing={2} style={{ marginTop: '10px' }}>
-                  <Button variant="contained" className="vt-whatsapp-btn"> <WhatsAppIcon style={{ marginRight: '3px' }} /> Whatsapp</Button>
+                  {/* <Button variant="contained" className="vt-whatsapp-btn"> <WhatsAppIcon style={{ marginRight: '3px' }} /> Whatsapp</Button> */}
                   <Button variant="contained" className="vc-contact-btn">Contact Now</Button>
                 </Stack>
               </Stack>
@@ -96,7 +96,8 @@ const index = () => {
             <div className="vc-shadow">
               <CardContent>
                 <div className="text-center">
-                  <FastfoodIcon className="vc-icon-label" />
+                  {/* <FastfoodIcon className="vc-icon-label" /> */}
+                  <img src="/img/icons/service-type-filled.svg" className='vc-icon-svg' alt="" />
                   <p className="vc-service-type">Service Type</p>
                   <h3 className="vc-service-heading">Table & Buffet Service</h3>
                 </div>
@@ -163,16 +164,16 @@ const index = () => {
           <h2 className="text-center mx-auto vc-gallery"> Our Gallery </h2>
           <div className="vc-row">
             <div className="vc-column">
-              <img src="/img/occasions/03.jpg" />
+              <img src="/img/occasions/03.jpg" className='occasion-top-left-radius' />
               <img src="/img/occasions/04.jpg" />
               <img src="/img/occasions/05.jpg" />
-              <img src="/img/occasions/06.jpg" />
+              <img src="/img/occasions/06.jpg" className='occasion-bottom-left-radius' />
             </div>
             <div className="vc-column">
               <img src="/img/occasions/01.jpg" />
               <img src="/img/occasions/09.jpg" />
               <img src="/img/occasions/02.jpg" />
-              <img src="/img/occasions/07.jpg" />
+              <img src="/img/occasions/07.jpg"/>
             </div>
             <div className="vc-column">
               <img src="/img/occasions/03.jpg" />
@@ -181,10 +182,10 @@ const index = () => {
               <img src="/img/occasions/06.jpg" />
             </div>
             <div className="vc-column">
-              <img src="/img/occasions/10.jpg" />
+              <img src="/img/occasions/10.jpg" className='occasion-top-right-radius'  />
               <img src="/img/occasions/09.jpg" />
               <img src="/img/occasions/11.jpg" />
-              <img src="/img/occasions/07.jpg" />
+              <img src="/img/occasions/07.jpg" className='occasion-bottom-right-radius' />
             </div>
           </div>
         </div>

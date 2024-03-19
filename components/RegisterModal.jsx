@@ -37,7 +37,7 @@ const RegisterModal = () => {
                 keepMounted
                 onClose={handleClose}
                 aria-describedby="alert-dialog-slide-description"
-                style={{ zIndex: '9999' }}
+                style={{ zIndex: '9999', borderRadius: '10px' }}
             >
                 <div className="register-desktop-modal register-bg">
                     <DialogTitle> <h2 className='text-center catering-register-title'>Caterings & Tiffins</h2> </DialogTitle>
@@ -76,7 +76,7 @@ const RegisterModal = () => {
                         </DialogContentText>
                     </DialogContent>
                     <Stack direction="row" justifyContent='center'>
-                        <Button variant="contained" className='login-otp'>Login With OTP</Button>
+                        <Button variant="contained" className='login-otp'>Register</Button>
                     </Stack>
                     <p className="text-center text-white cursor-pointer reg-later" onClick={handleClose}>Maybe Later</p>
                 </div>
