@@ -434,11 +434,12 @@ body h1,h2,h3,h4,h5,h6{
 }
 
 .recent-search-card {
-  /* box-shadow: var(--card-box-shadow); */
+  box-shadow: var(--card-box-shadow);
   width: fit-content;
   padding: 5px;
   border-radius: var(--radiusOne);
 }
+
 
 .border-radius-two {
   border-radius: var(--radiusTwo);
@@ -468,7 +469,11 @@ body h1,h2,h3,h4,h5,h6{
   object-fit: cover;
   border-radius: var(--radiusTwo);
 }
-
+.explore-cuisine-card{
+  width: fit-content;
+  padding: 5px;
+  border-radius: var(--radiusOne);
+}
 .cat-types {
   margin-top: 15px;
 }
