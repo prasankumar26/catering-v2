@@ -1417,9 +1417,18 @@ border-top-left-radius: 8px;
   width: 200px;
   height: 200px;
 }
+.list-card-img-tiffin {
+  width: 170px;
+  height: 170px;
+}
 
 .listview-img {
   width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.listview-img-tiffin {
+  width: 170px;
   height: 200px;
   object-fit: cover;
 }
@@ -1486,6 +1495,16 @@ border-top-left-radius: 8px;
   font-weight: 500;
   font-family: var(--fontPrimary);
 }
+.list-card-chip-tiffin {
+  font-size: 12px;
+  /* background-color: #d9822b15; */
+  color: var(--primary);
+  padding: 5px 1px;
+  border-radius: 99px;
+  width: fit-content;
+  font-weight: 500;
+  font-family: var(--fontPrimary);
+}
 
 .lse-icons {
   color: var(--secondarytext);
@@ -1497,6 +1516,13 @@ border-top-left-radius: 8px;
   font-size: 12px;
   font-weight: 400;
   color: var(--secondary);
+}
+
+.lse-map-icon-orange{
+  font-family: var(--fontSecondary);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--primary);
 }
 
 .lse-reviews {
@@ -1520,10 +1546,27 @@ border-top-left-radius: 8px;
   color: var(--secondary);
 }
 
+.lse-rupees-orange{
+  font-family: var(--fontSecondary);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
 .list-card-tag {
   top: 10px;
   background-color: #8E11A5;
   padding: 8px 20px;
+  color: var(--secondarybg);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.list-card-tag-tiffin {
+  top: 0px;
+  background-color: var(--accent3);
+  padding: 6px 20px;
   color: var(--secondarybg);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1905,6 +1948,26 @@ border-top-left-radius: 8px;
 
 /* user profile end  */
 
+/* tiffin styles start  */
+.nav-bg-tiffin{
+  background-color: var(--primary);
+  padding: 25px 0px 130px 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+}
+.search-btn-tiffin:hover {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+.faq-bg-tiffin{
+  background-color: none;
+  border: 2px solid var(--primary);
+  border-radius: 8px !important;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+/* tiffin styles end  */
 
 /* media quories start */
 @media only screen and (max-width: 1200px) {
@@ -1944,8 +2007,14 @@ border-top-left-radius: 8px;
   .listview-img {
     width: 155px;
   }
+  .listview-img-tiffin {
+    width: 155px;
+  }
 
   .list-card-img {
+    width: 145px;
+  }
+  .list-card-img-tiffin {
     width: 145px;
   }
 }
@@ -1963,8 +2032,14 @@ border-top-left-radius: 8px;
   .listview-img {
     width: 100%;
   }
+  .listview-img-tiffin {
+    width: 100%;
+  }
 
   .list-card-img {
+    width: 100%;
+  }
+  .list-card-img-tiffin {
     width: 100%;
   }
 }

@@ -108,16 +108,16 @@ const IOSSwitch = styled((props) => (
     },
 }));
 
-const SwitchSearchResult = ({checked, setChecked }) => {
+const TiffinSwitchSearchResult = ({checked, setChecked }) => {
 
     return (
         <>
             <Stack direction="row" spacing={1} className='grid-list-shadow'>
-                <FormatListBulletedIcon style={{ cursor: 'pointer', color: checked ? '#c33332' : '' }} onClick={()=> setChecked(true)} />
-                <GridViewIcon  style={{ cursor: 'pointer', color: !checked ? '#c33332' : '' }} onClick={()=> setChecked(false)} />
+                <FormatListBulletedIcon style={{ cursor: 'pointer', color: checked ? '#d9822b' : '' }} onClick={()=> setChecked(true)} />
+                <GridViewIcon  style={{ cursor: 'pointer', color: !checked ? '#d9822b' : '' }} onClick={()=> setChecked(false)} />
             </Stack>
         </>
     )
 }
 
-export default SwitchSearchResult;
+export default TiffinSwitchSearchResult;

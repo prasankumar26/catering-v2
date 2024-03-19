@@ -6,13 +6,13 @@ import Container from '@mui/material/Container';
 import faqquestions from '../data/faqquestions.json'
 
 
-const Faq = () => {
+const Faq = ({tiffin}) => {
     return (
         <>
             <Container maxWidth="sm">
                 {
                     faqquestions.map((faq) => (
-                        <Accordion className='faq-bg'>
+                        <Accordion className={tiffin ? 'faq-bg-tiffin' : 'faq-bg'}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1-content"
