@@ -355,6 +355,53 @@ const Filters = () => {
 
                     <Divider />
                     <CardContent>
+                        <h3 className='font-20 font-weight-500 filter-text'>Choose Occasions:</h3>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{ marginLeft: '-10px', marginTop: '5px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Wedding</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Engagement</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Ring Ceremony</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Baby Shower</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Naming Ceremony</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Birthday</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Cocktail Party</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Freshers Party</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Bachelorette Party</span>
+                        </Stack>
+                        <Stack className='text-muted' direction="row" alignItems="center" sx={{marginLeft: '-10px' }}>
+                            <Checkbox {...label} size="small" className='checkbox-color' />
+                            <span className='checkbox-text'>Farewell Party</span>
+                        </Stack>
+                        <p className='text-center' style={{color: '#245396', fontSize: '12px', cursor: 'pointer' }}>Show all 15</p>
+                    </CardContent>
+
+
+                    <Divider />
+                    <CardContent>
                         <h3 className='font-20 font-weight-500 filter-text'>Choose Service Type:</h3>
                         <Stack className='text-muted' direction="row" alignItems="center" sx={{ marginLeft: '-10px', marginTop: '5px' }}>
                             <Checkbox {...label} size="small" className='checkbox-color' />

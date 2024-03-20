@@ -17,7 +17,7 @@ const ListView = ({ catering }) => {
     };
     return (
         <>
-            {[1,2,3,4,5,6].map((item) => (
+            {[1,2,3,4,5,6,7].map((item) => (
                 <div className="list-view-card" key={item}>
                     <Stack spacing={{ xs: 1, sm: 2, md: 0 }} direction={{ xs: 'column', sm: 'row', md: 'row', lg: "row" }} justifyContent="space-between" flexWrap="wrap">
 

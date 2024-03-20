@@ -66,11 +66,14 @@ const index = () => {
             <Grid item sm={12} lg={7}>
               <Stack direction="row" alignItems="center" spacing={1} className="mb-4">
                 <h2 className="food-type-tiffin">Food Type : </h2> <Stack direction="row" spacing={1}>
-                  <span className="vc-green-box"></span> <span className="veg-green" style={{ marginRight: '6px' }}>Veg</span> & <span className="vc-gray-box"></span>
+                <img src="/img/icons/list-card-veg.png" className='list-card-veg' alt="" />
+                  <span className="veg-green" style={{ marginRight: '6px' }}>
+                    Veg</span> &   <img src="/img/icons/list-card-non-veg.png" className='list-card-veg' alt="" /> 
                   <span className="food-type-non-veg font-16">Non-Veg</span> </Stack>
               </Stack>
+             
               <h2 className="vc-cater-tiffin">Cuisines We Cater</h2>
-              <h2 className="vc-locations">South Indian, North Indian, Hyderabadi, Mangaloreian, Chettinad & Chinese</h2>
+              <h2 className="vc-locations">South Indian | North Indian | Hyderabadi | Mangalorean | Chettinad | Chinese</h2>
             </Grid>
             <Grid item sm={12} lg={5}>
               <Stack direction="column" alignContent="end" alignItems="end" justifyContent="end">
@@ -174,7 +177,7 @@ const index = () => {
               <img src="/img/occasions/01.jpg" />
               <img src="/img/occasions/09.jpg" />
               <img src="/img/occasions/02.jpg" />
-              <img src="/img/occasions/07.jpg"/>
+              <img src="/img/occasions/07.jpg" />
             </div>
             <div className="vc-column">
               <img src="/img/occasions/03.jpg" />
@@ -183,7 +186,7 @@ const index = () => {
               <img src="/img/occasions/06.jpg" />
             </div>
             <div className="vc-column">
-              <img src="/img/occasions/10.jpg" className='occasion-top-right-radius'  />
+              <img src="/img/occasions/10.jpg" className='occasion-top-right-radius' />
               <img src="/img/occasions/09.jpg" />
               <img src="/img/occasions/11.jpg" />
               <img src="/img/occasions/07.jpg" className='occasion-bottom-right-radius' />
