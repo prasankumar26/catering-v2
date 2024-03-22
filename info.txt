@@ -33,7 +33,7 @@ Tiffin:-
 https://catering26.vercel.app/
 https://catering26.vercel.app/tiffin
 https://catering26.vercel.app/tiffin-search
-https://catering26.vercel.app/view-tiffin
+https://catering26.vercel.app/tiffin-view
 https://catering26.vercel.app/user-profile
 
 

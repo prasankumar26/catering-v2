@@ -49,7 +49,6 @@ const SelectBox = ({ catering }) => {
                     <Button size="small" className={'btn-pill btn-pill-active'}>All Caterers</Button>
                     <Button size="small" className="btn-pill" style={{ color: '#726e6e', fontSize: '12px' }}>Branded Caterers</Button>
                     <Button size="small" className="btn-pill" style={{ color: '#726e6e', fontSize: '12px' }}>Popular Caterers</Button>
-                    <Button size="small" className="btn-pill tablet-hide" style={{ color: '#726e6e', fontSize: '12px' }}>Recommended Caterers</Button>
                 </Stack>
             </Stack>
 

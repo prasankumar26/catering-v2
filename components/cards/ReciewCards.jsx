@@ -30,6 +30,7 @@ const ReciewCards = ({tiffin}) => {
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Autoplay]}
+                style={{padding: '0px 5px'}}
                 className="mySwiper branded-cater-slider"
                 breakpoints={{
                     0: {

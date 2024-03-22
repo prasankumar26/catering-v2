@@ -12,7 +12,7 @@ const GridViewTiffin = () => {
                 <Grid container spacing={2}>
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Link href="/view-tiffin" className='text-decoration-none'>
+                            <Link href="/tiffin-view" className='text-decoration-none'>
                                 <div className="vc-similar-card">
                                     <img src="/img/occasions/03.jpg" alt="" className="img-fluid vc-similar-card-img" />
                                     <div className="vc-similar-card-description">

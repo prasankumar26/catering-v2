@@ -28,7 +28,7 @@ const page = () => {
                   </div>
                   <Stack direction="row" justifyContent="space-between" alignItems="center" style={{ marginTop: '20px' }}>
                     <span className='text-red vc-similar-card-cost'>270 / Plate</span>
-                    <Link href="/view-tiffin" variant="contained"
+                    <Link href="/tiffin-view" variant="contained"
                       className='text-decoration-none'
                       style={{
                         color: '#ffffff',

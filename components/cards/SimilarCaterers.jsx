@@ -27,11 +27,13 @@ const SimilarCaterers = ({ tiffin }) => {
                     clickable: true,
                 }}
                 loop={true}
+                
                 autoplay={{
                     delay: 26666500,
                     disableOnInteraction: false,
                 }}
                 modules={[Navigation, Autoplay]}
+                style={{padding: '0px 5px'}}
                 className="mySwiper branded-cater-slider"
                 breakpoints={{
                     0: {
@@ -67,7 +69,7 @@ const SimilarCaterers = ({ tiffin }) => {
                                         Veg</span> &   <img src="/img/icons/list-card-non-veg.png" className='list-similar-veg' alt="" />
                                     <span className="food-type-non-veg-similar font-16">Non-Veg</span> </Stack>
 
-                                <h2 className="vc-similar-blue">South Indian | North Indian | Hyderabadi | Mughlai | Kerala</h2>
+                                <h2 className="vc-similar-blue">South Indian | North Indian | Mughlai | Kerala</h2>
 
                                 <Stack direction="row" alignItems="center" justifyContent="end" className="mb-4">
                                     <Stack direction="row" alignItems="center" justifyContent="end" spacing={0}>

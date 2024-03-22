@@ -49,7 +49,6 @@ const TiffinSelectBox = ({ catering }) => {
                     <Button size="small" className={'btn-pill btn-pill-active-catering'}>All Caterers</Button>
                     <Button size="small" className="btn-pill" style={{ color: '#d9822b', fontSize: '12px' }}>Branded Caterers</Button>
                     <Button size="small" className="btn-pill" style={{ color: '#d9822b', fontSize: '12px' }}>Popular Caterers</Button>
-                    <Button size="small" className="btn-pill tablet-hide" style={{ color: '#d9822b', fontSize: '12px' }}>Recommended Caterers</Button>
                 </Stack>
             </Stack>
 

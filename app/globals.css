@@ -1425,7 +1425,7 @@ border-top-left-radius: 8px;
 .btn-pill {
   background-color: #E0E3E7 !important;
   border-radius: 99px !important;
-  padding: 2px 6px !important;
+  padding: 2px 10px !important;
   text-transform: capitalize !important;
   font-size: 12px;
 }
