@@ -7,7 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 
 const SimilarCaterers = ({ tiffin }) => {
@@ -57,9 +58,26 @@ const SimilarCaterers = ({ tiffin }) => {
                                         <h3 className='sc-title'>Balaji Catering Service</h3>
                                         <p className='vc-similar-card-small text-left'>Adyar, Chennai</p>
                                     </div>
-                                    <span className='vc-similar-card-cost' style={{ color: tiffin ? '#D9822B' : '#C33332' }}>270 / Plate</span>
+                                    {/* <span className='vc-similar-card-cost' style={{ color: tiffin ? '#D9822B' : '#C33332' }}>270 / Plate</span> */}
                                 </Stack>
-                                <div className="text-start" style={{ marginBottom: '5px' }}>
+
+                                <Stack direction="row" spacing={1}>
+                                    <img src="/img/icons/list-card-veg.png" className='list-similar-veg' alt="" />
+                                    <span className="veg-green-similar" style={{ marginRight: '6px' }}>
+                                        Veg</span> &   <img src="/img/icons/list-card-non-veg.png" className='list-similar-veg' alt="" />
+                                    <span className="food-type-non-veg-similar font-16">Non-Veg</span> </Stack>
+
+                                <h2 className="vc-similar-blue">South Indian | North Indian | Hyderabadi | Mughlai | Kerala</h2>
+
+                                <Stack direction="row" alignItems="center" justifyContent="end" className="mb-4">
+                                    <Stack direction="row" alignItems="center" justifyContent="end" spacing={0}>
+                                        <CurrencyRupeeIcon className={tiffin ? 'vc-price-one-similar-tiffin' : 'vc-price-one-similar-catering'} />
+                                        <span className={tiffin ? 'vc-price-one-similar-tiffin' : 'vc-price-one-similar-catering'}> 250 / Plate </span>
+                                    </Stack>
+                                </Stack>
+
+
+                                {/* <div className="text-start" style={{ marginBottom: '5px' }}>
                                     <p className='vc-similar-card-small'>Food Type: Veg  | NonVeg</p>
                                 </div>
                                 <div className="text-start">
@@ -71,7 +89,7 @@ const SimilarCaterers = ({ tiffin }) => {
                                             backgroundColor: '#D9822B',
                                         },
                                     }} variant="contained" className="viewSimilarCaters">View</Button>}
-                                </Stack>
+                                </Stack> */}
                             </div>
                         </div>
                     </SwiperSlide>

@@ -198,7 +198,7 @@ h6 {
   color: #C33332;
   text-transform: capitalize;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 99px;
   padding: 10px 20px;
   width: fit-content;
@@ -1253,7 +1253,7 @@ border-top-left-radius: 8px;
 /* VC similar cards  */
 .vc-similar-card {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 10px;
+  padding: 5px;
   margin: 5px 0px 10px 0px;
   border-radius: 8px;
 }
@@ -1281,6 +1281,41 @@ border-top-left-radius: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--secondarytext);
+}
+.vc-similar-blue{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--tertiary);
+  margin-top: 5px !important;
+}
+.list-similar-veg{
+  width: 20px;
+}
+.food-type-non-veg-similar {
+  color: #7C1E1E;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Readex Pro", sans-serif;
+}
+.veg-green-similar {
+  color: #459412;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Readex Pro", sans-serif;
+}
+.vc-price-one-similar-tiffin {
+  color: var(--primary);
+  font-weight: 500;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.vc-price-one-similar-catering {
+  color: var(--secondary);
+  font-weight: 500;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 /* vc-review-card  */

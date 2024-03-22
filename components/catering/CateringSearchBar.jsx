@@ -26,6 +26,10 @@ const CssTextField = styled(TextField)(({ theme }) => ({
         '&.Mui-focused fieldset': {
             border: '2px solid #C33332',
         },
+        '& input::placeholder': {
+            fontWeight: '600',
+            fontSize: '12px',
+        },
     },
     '& input': {
         border: 'none',
@@ -47,6 +51,10 @@ const CssTextFieldRadius = styled(TextField)(({ theme }) => ({
         '&.Mui-focused fieldset': {
             border: '2px solid #C33332',
         },
+        '& input::placeholder': {
+            fontWeight: '600',
+            fontSize: '12px',
+        },
     },
     '& input': {
         border: 'none',
@@ -67,7 +75,6 @@ const CateringSearchBar = () => {
                             id="outlined-number"
                             placeholder="Enter your location..."
                             variant="outlined"
-                            // label="Enter your location..."
                             className='mt-0'
                             style={{ width: '100%' }}
                             InputLabelProps={{
@@ -120,7 +127,8 @@ const CateringSearchBar = () => {
                     </div>
                     <div>
                         <Link href="/catering-search">
-                            <Button className='red-btn' variant="contained" sx={{ boxShadow: 'none',
+                            <Button className='red-btn' variant="contained" sx={{
+                                boxShadow: 'none',
                                 width: '100%', fontWeight: '600', padding: '11px 20px', fontSize: '14px', backgroundColor: '#C33332', textTransform: 'capitalize', '&:hover': {
                                     backgroundColor: '#C33332',
                                 },

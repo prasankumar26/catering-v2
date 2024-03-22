@@ -27,6 +27,10 @@ const CssTextField = styled(TextField)(({ theme }) => ({
         '&.Mui-focused fieldset': {
             border: '2px solid #d9822b',
         },
+        '& input::placeholder': {
+            fontWeight: '600',
+            fontSize: '12px',
+        }
     },
     '& input': {
         border: 'none',
@@ -48,6 +52,10 @@ const CssTextFieldRadius = styled(TextField)(({ theme }) => ({
         '&.Mui-focused fieldset': {
             border: '2px solid #d9822b',
         },
+        '& input::placeholder': {
+            fontWeight: '600',
+            fontSize: '12px',
+        }
     },
     '& input': {
         border: 'none',
@@ -121,7 +129,8 @@ const TiffinSearchBar = () => {
                     </div>
                     <div>
                         <Link href="/tiffin-search">
-                            <Button className='red-btn' variant="contained" sx={{ boxShadow: 'none',
+                            <Button className='red-btn' variant="contained" sx={{
+                                boxShadow: 'none',
                                 width: '100%', fontWeight: '600', padding: '11px 20px', fontSize: '14px', backgroundColor: '#d9822b', textTransform: 'capitalize', '&:hover': {
                                     backgroundColor: '#d9822b',
                                 },
